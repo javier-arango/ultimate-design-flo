@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  color: var(--color-christobel);
+}
+
+.link:hover {
+  color: var(--color-lynx-white);
+}

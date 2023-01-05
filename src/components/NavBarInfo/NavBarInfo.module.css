@@ -1,0 +1,21 @@
+.navBarInfoContainer {
+  background-color: var(--color-burnished-russet);
+  color: var(--color-christobel);
+}
+
+.navBarInfoContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xxx-big);
+  padding: var(--space-xx-sm) 0;
+  flex-wrap: wrap;
+}
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .navBarInfoContent {
+    /* Screen size divide it by 32px */
+    gap: calc(100vw / 32);
+  }
+}

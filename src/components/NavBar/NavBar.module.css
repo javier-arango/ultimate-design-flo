@@ -1,0 +1,32 @@
+.navBar-container {
+  padding: var(--space-x-big) 0;
+
+  color: var(--color-christobel);
+  background-color: var(--color-oxford-brown);
+}
+
+/* Medium Screen & Larger */
+@media only screen and (min-width: 768px) {
+  .navBar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--space-xxx-big);
+  }
+}
+
+/* Small Screen & Some of the Medium Screen */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .navBar-menu {
+    display: none;
+  }
+
+  .navBar-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xx-big);
+    width: 100%;
+  }
+}
