@@ -1,6 +1,22 @@
+import {
+  ButtonType,
+  ButtonVariant,
+  FlexDirection,
+  JustifyContent,
+  ContainerSize,
+  LabelSize,
+  IconName,
+} from "./types";
+
 export interface INavBarItemsData {
   name: string;
   href: string;
+}
+
+export interface IFooterItemsData {
+  label: string;
+  iconName: IconName;
+  info: string;
 }
 
 export interface IIcon {
@@ -11,7 +27,33 @@ export interface IIcon {
 
 export interface IButton {
   label: string;
-  type?: "button" | "submit";
-  variant?: "primary" | "secondary";
+  type?: ButtonType;
+  variant?: ButtonVariant;
   onClick?: () => void;
+}
+
+export interface ILInk {
+  name: string;
+  to?: string;
+  className?: string;
+}
+
+export interface IContainer {
+  flexDirection?: FlexDirection;
+  justifyContent?: JustifyContent;
+  className?: string;
+}
+
+export interface IBgImageContainer {
+  image: string;
+  alt: string;
+  containerSize?: ContainerSize;
+  className?: string;
+}
+
+export interface ILabelAndIcon {
+  label: string;
+  labelSize?: LabelSize;
+  iconName: IconName;
+  iconProperties?: IIcon;
 }

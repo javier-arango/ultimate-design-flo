@@ -1,0 +1,19 @@
+.imgContainer {
+  position: absolute;
+  object-fit: cover;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(81, 66, 59, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

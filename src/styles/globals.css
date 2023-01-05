@@ -291,17 +291,6 @@ h6 {
 }
 
 /* -------------------------------- 
-  Containers
-  -------------------------------- */
-/* Label container | Icon + Text */
-.label-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--space-xx-sm);
-}
-
-/* -------------------------------- 
   Dividers
   -------------------------------- */
 hr,
@@ -357,6 +346,11 @@ hr,
   -------------------------------- */
 /* Large Screen */
 @media only screen and (min-width: 1136px) {
+  /* Margin Large | Responsive */
+  .margin-responsive {
+    margin: 0px var(--layout-grid-lg);
+  }
+
   /* Label Large | Responsive */
   .label-responsive {
     font-size: var(--font-text-lg);
@@ -371,6 +365,11 @@ hr,
 
 /* Medium Screen */
 @media only screen and (min-width: 600px) and (max-width: 1135px) {
+  /* Margin Medium | Responsive */
+  .margin-responsive {
+    margin: 0px var(--layout-grid-md);
+  }
+
   /* Label Medium | Responsive */
   .label-responsive {
     font-size: var(--font-text-md);
@@ -380,6 +379,11 @@ hr,
 
 /* Small Screen */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
+  /* Margin Small | Responsive */
+  .margin-responsive {
+    margin: 0px var(--layout-grid-sm);
+  }
+
   /* Label Small | Responsive */
   .label-responsive {
     font-size: var(--font-text-sm);
