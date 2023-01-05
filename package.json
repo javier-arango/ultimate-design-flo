@@ -5,6 +5,16 @@
   "description": "Revamp your furniture with Ultimate Design Flo - Florida's premier destination for skilled upholstery services!",
   "license": "CC BY-NC-SA 4.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier-arango/ultimate-design-flo.git"
+  },
+  "keywords": [
+    "ultimate design flo",
+    "ultimate design flo furniture",
+    "ultimate design flo upholstery",
+    "ultimate design flo furniture repair"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,0 +1,52 @@
+/* Large Button | Default */
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: var(--border-radius-x-lg);
+  border: none;
+  cursor: pointer;
+
+  user-select: none;
+  padding: var(--space-big) var(--space-xxx-big);
+}
+
+/* Primary Button */
+.primaryButton {
+  color: var(--color-lynx-white);
+  background: var(--color-gold-taffeta);
+}
+
+/* Secondary Button */
+.secondaryButton {
+  color: var(--color-gold-taffeta);
+  background: none;
+  border: 2px solid var(--color-gold-taffeta);
+}
+
+/* Primary Button Hover */
+.primaryButton:hover {
+  background: var(--color-dandelion-wine);
+  color: var(--color-gold-taffeta);
+}
+
+/* Secondary Button Hover */
+.secondaryButton:hover {
+  border-color: var(--color-dandelion-wine);
+  color: var(--color-dandelion-wine);
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 600px) and (max-width: 1135px) {
+  /* Medium Button */
+  .button {
+    padding: var(--space-sm) var(--space-xxx-big);
+  }
+}
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  /* Small Button */
+  .button {
+    padding: var(--space-x-sm) var(--space-x-big);
+  }
+}

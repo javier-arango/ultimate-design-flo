@@ -1,0 +1,155 @@
+:root {
+  /* -------------------------------- 
+  Colors
+  -------------------------------- */
+  --color-oxford-brown: #51423b;
+  --color-christobel: #d4c4bc;
+  --color-lynx-white: #f7f7f8;
+  --color-sambucus: #101828;
+  --color-mauve-mole: #7d726e;
+  --color-burnished-russet: #794328;
+  --color-dandelion-wine: #f8f5b8;
+  --color-gold-taffeta: #bb9c36;
+
+  /* -------------------------------- 
+  Spacing
+  -------------------------------- */
+  /* Spacing Small */
+  --space-xx-sm: 0.25rem; /* 4px */
+  --space-x-sm: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+
+  /* Spacing Medium */
+  --space-md: 1rem; /* 16px */
+
+  /* Spacing Big */
+  --space-big: 1.25rem; /* 20px */
+  --space-x-big: 1.5rem; /* 24px */
+  --space-xx-big: 1.75rem; /* 28px */
+  --space-xxx-big: 2rem; /* 32px */
+
+  /* Spacing Large */
+  --space-lg: 2.5rem; /* 40px */
+  --space-x-lg: 3rem; /* 48px */
+  --space-xx-lg: 4rem; /* 64px */
+  --space-xxx-lg: 5rem; /* 80px */
+
+  /* Spacing Huge */
+  --space-huge: 6rem; /* 96px */
+  --space-x-huge: 8rem; /* 128px */
+  --space-xx-huge: 10rem; /* 160px */
+  --space-xxx-huge: 12rem; /* 192px */
+
+  /* -------------------------------- 
+  Layout Grid
+  -------------------------------- */
+  --layout-grid-sm: 1rem; /* 16px */
+  --layout-grid-md: 2rem; /* 32px */
+  --layout-grid-lg: 7rem; /* 112px */
+
+  /* -------------------------------- 
+  Shadows
+  -------------------------------- */
+  /* Shadows  Small */
+  --shadow-x-sm: 0px 1px 2px var(--color-sambucus);
+  --shadow-sm: 0px 1px 2px -1px var(--color-sambucus),
+    0px 1px 3px var(--color-sambucus);
+
+  /* Shadows  Medium */
+  --shadow-md: 0px 2px 4px -2px var(--color-sambucus),
+    0px 4px 6px -1px var(--color-sambucus);
+
+  /* Shadows  Large */
+  --shadow-lg: 0px 4px 6px -4px var(--color-sambucus),
+    0px 10px 15px -3px var(--color-sambucus);
+
+  --shadow-x-lg: 0px 8px 10px -6px var(--color-sambucus),
+    0px 20px 25px -5px var(--color-sambucus);
+
+  --shadow-xx-lg: 0px 25px 50px -12px var(--color-sambucus);
+
+  /* -------------------------------- 
+  Blur
+  -------------------------------- */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(12px);
+  --blur-x-lg: blur(20px);
+
+  /* -------------------------------- 
+  Border Radius
+  -------------------------------- */
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 32px;
+  --border-radius-x-lg: 40px;
+
+  /* -------------------------------- 
+  Dividers
+  -------------------------------- */
+  --divider-sm: 1px solid var(--color-christobel);
+  --divider-md: 2px solid var(--color-christobel);
+  --divider-lg: 8px solid var(--color-christobel);
+
+  /* -------------------------------- 
+  Typography
+  -------------------------------- */
+  --font-primary: "Satoshi";
+  --font-secondary: sans-serif;
+
+  /* Letter Spacing */
+  --font-letter-spacing-lg: 0.063rem; /* 1px */
+  --font-letter-spacing-sm: 0.047rem; /* 0.75px */
+
+  /* Line Height */
+  --font-heading-line-height: 1.2;
+  --font-body-line-height: 1.4;
+
+  /* Display Desktop */
+  --font-display-lg: 4rem; /* 64px */
+  --font-display-md: 3.5rem; /* 56px */
+  --font-display-sm: 3rem; /* 48px */
+
+  /* Headings */
+  --font-heading-h1: 2.5rem; /* 40px */
+  --font-heading-h2: 2.25rem; /* 36px */
+  --font-heading-h3: 2rem; /* 32px */
+  --font-heading-h4: 1.75rem; /* 28px */
+  --font-heading-h5: 1.5rem; /* 24px */
+  --font-heading-h6: 1.25rem; /* 20px */
+
+  /* Text: Paragraph | Overline | Label */
+  --font-text-lg: 1.125rem; /* 18px */
+  --font-text-md: 1rem; /* 16px */
+  --font-text-sm: 0.875rem; /* 14px */
+  --font-text-x-sm: 0.75rem; /* 12px */
+}
+
+/* Large Screen */
+/* @media only screen and (min-width: 1136px) {
+} */
+
+/* Medium Screen */
+/* @media only screen and (min-width: 600px) and (max-width: 1135px) {
+} */
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  :root {
+    /* -------------------------------- 
+    Typography
+    -------------------------------- */
+    /* Display Mobile */
+    --font-display-lg: 3rem; /* 48px */
+    --font-display-md: 2.5rem; /* 40px */
+    --font-display-sm: 2rem; /* 32px */
+
+    /* Headings Mobile */
+    --font-heading-h1: 2.25rem; /* 36px */
+    --font-heading-h2: 2rem; /* 32px */
+    --font-heading-h3: 1.75rem; /* 28px */
+    --font-heading-h4: 1.5rem; /* 24px */
+    --font-heading-h5: 1.25rem; /* 20px */
+    --font-heading-h6: 1.125rem; /* 18px */
+  }
+}
