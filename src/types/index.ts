@@ -1,3 +1,20 @@
-import { INavBarItemsData, IIcon, IButton } from "./interfaces";
+export type {
+  INavBarItemsData,
+  IFooterItemsData,
+  IIcon,
+  IButton,
+  ILInk,
+  IContainer,
+  IBgImageContainer,
+  ILabelAndIcon,
+} from "./interfaces";
 
-export type { INavBarItemsData, IIcon, IButton };
+export type {
+  ButtonType,
+  ButtonVariant,
+  FlexDirection,
+  JustifyContent,
+  ContainerSize,
+  IconName,
+  LabelSize,
+} from "./types";

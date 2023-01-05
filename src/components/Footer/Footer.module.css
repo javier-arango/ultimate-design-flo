@@ -1,0 +1,13 @@
+.footer {
+  height: 437px;
+  background-color: var(--color-oxford-brown);
+  color: var(--color-christobel);
+  padding: 64px 0;
+}
+
+.footerItemsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}

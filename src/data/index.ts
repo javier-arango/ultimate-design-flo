@@ -1,1 +1,1 @@
-export { default as navBarItemsData } from "./constants";
+export { navBarItemsData, footerItemsData } from "./constants";

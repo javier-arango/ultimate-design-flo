@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 
-import { Button, Container } from "../Global";
+import { Button, Container, BgImageContainer } from "../Global";
 import { useRouter } from "next/router";
 
 const Hero = () => {
@@ -12,21 +12,24 @@ const Hero = () => {
   }
 
   return (
-    <div className={`${styles.heroContainer}`}>
-      <div className={`bg-blur-sm ${styles.heroContent}`}>
-        <Container flexDirection="column" className="text-align-center">
-          <p className={`label-lg ${styles.heroTitle}`}>Welcome To</p>
-          <h1 className={`display-sm ${styles.heroDisplay}`}>
-            Ultimate Design Flo
-          </h1>
-          <p className={`paragraph-lg ${styles.heroParagraph}`}>
-            Upgrade your home's style with our furniture makeover magic!
-          </p>
+    <BgImageContainer
+      image="/assets/hero-images/home-page-img.png"
+      alt="Home page image for Ultimate Design Flow website"
+      containerSize="lg"
+      className="text-align-center"
+    >
+      <Container flexDirection="column">
+        <p className={`overline-lg ${styles.heroOverline}`}>Welcome To</p>
+        <h1 className={`display-sm ${styles.heroDisplay}`}>
+          Ultimate Design Flo
+        </h1>
+        <p className={`paragraph-lg ${styles.heroParagraph}`}>
+          Upgrade your home's style with our furniture makeover magic!
+        </p>
 
-          <Button label="Contact Now" onClick={redirect} />
-        </Container>
-      </div>
-    </div>
+        <Button label="Contact Now" onClick={redirect} />
+      </Container>
+    </BgImageContainer>
   );
 };
 

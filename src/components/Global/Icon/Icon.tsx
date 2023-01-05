@@ -1,16 +1,16 @@
-import { IIcon } from "../../../types";
+import { IIcon, IconName } from "../../../types";
 import {
   EmailIcon,
   PhoneIcon,
   ArrowCircleLeftIcon,
   ArrowCircleRightIcon,
-  BuildingOfficeIcon,
+  OfficeIcon,
   CalendarIcon,
   FabricIcon,
   FacebookIcon,
   InstagramIcon,
   RibbonStarFilledIcon,
-  LocationFillIcon,
+  LocationIcon,
   PersonIcon,
   FlagIcon,
   RulerIcon,
@@ -18,22 +18,7 @@ import {
 } from "./Icons";
 
 interface Props extends IIcon {
-  name:
-    | "email"
-    | "phone"
-    | "arrowCircleLeft"
-    | "arrowCircleRight"
-    | "buildingOffice"
-    | "calendar"
-    | "fabric"
-    | "facebook"
-    | "instagram"
-    | "ribbonStarFilled"
-    | "locationFill"
-    | "person"
-    | "flag"
-    | "ruler"
-    | "deliveryTruck";
+  name: IconName;
 }
 
 const Icon = ({ name, width, height, color }: Props) => {
@@ -47,9 +32,7 @@ const Icon = ({ name, width, height, color }: Props) => {
     arrowCircleRight: (
       <ArrowCircleRightIcon width={width} height={height} color={color} />
     ),
-    buildingOffice: (
-      <BuildingOfficeIcon width={width} height={height} color={color} />
-    ),
+    office: <OfficeIcon width={width} height={height} color={color} />,
     calendar: <CalendarIcon width={width} height={height} color={color} />,
     fabric: <FabricIcon width={width} height={height} color={color} />,
     facebook: <FacebookIcon width={width} height={height} color={color} />,
@@ -57,9 +40,7 @@ const Icon = ({ name, width, height, color }: Props) => {
     ribbonStarFilled: (
       <RibbonStarFilledIcon width={width} height={height} color={color} />
     ),
-    locationFill: (
-      <LocationFillIcon width={width} height={height} color={color} />
-    ),
+    location: <LocationIcon width={width} height={height} color={color} />,
     person: <PersonIcon width={width} height={height} color={color} />,
     flag: <FlagIcon width={width} height={height} color={color} />,
     ruler: <RulerIcon width={width} height={height} color={color} />,
