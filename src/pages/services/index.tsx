@@ -9,7 +9,7 @@ export default function Services() {
       <NavBarInfo />
       <NavBar />
       <h1 className="display-lg">Services</h1>
-      <LinkItem name="Go Back Home" />
+      <LinkItem>Go Back Home</LinkItem>
     </>
   );
 }

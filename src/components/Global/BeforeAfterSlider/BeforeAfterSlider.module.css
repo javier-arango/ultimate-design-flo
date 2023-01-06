@@ -1,43 +1,57 @@
 .container {
   position: relative;
-  width: 424px;
+  max-width: 424px;
   height: 327px;
   border: 2px solid white;
+
+  margin: 50px auto;
+  overflow: hidden;
+  box-shadow: 0 15px 15px rgb(0 0 0 / 25%);
+}
+
+.handle {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: white;
+  z-index: 3;
+  cursor: col-resize;
+  top: 0;
 }
 
 .img {
   object-fit: cover;
-}
-
-.foregroundImg {
-  width: 50% !important;
-}
-
-.slider {
-  position: absolute;
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
   height: 100%;
-  background: rgba(45, 56, 23, 0.3);
-  outline: none;
-  margin: 0;
-  transition: all 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  vertical-align: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
-.slider:hover {
-  background: rgba(45, 56, 23, 0.1);
+.comparison-item {
+  overflow: hidden;
 }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 6px;
-  height: 327px;
-  background: white;
-  cursor: "ew-resize";
+.comparisonItem.top {
   z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.label {
+  position: absolute;
+  z-index: 3;
+}
+
+.labelLeft {
+  left: 0;
+  padding: 12px 0 0 64px;
+}
+
+.labelRight {
+  right: 0;
+  padding: 12px 64px 0 0;
 }

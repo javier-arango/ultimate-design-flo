@@ -1,8 +1,18 @@
 .link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--color-christobel);
 }
 
 .link:hover {
   color: var(--color-lynx-white);
+}
+
+.link svg {
+  transition: transform 0.2s;
+}
+
+.link:hover svg {
+  transform: translate(-2px, -2px);
 }

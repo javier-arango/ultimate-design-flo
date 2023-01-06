@@ -15,7 +15,7 @@ const NavBar = () => {
       <nav className={styles["navBar-container"]}>
         <Container flexDirection="row">
           {/* Logo */}
-          <LinkItem name="Ultimate Design Flo" to="/" />
+          <LinkItem to="/">Ultimate Design Flo</LinkItem>
 
           {/* Menu Button for mobile */}
           <HamburgerMenu open={isMenuOpen} setOpen={setIsMenuOpen} />
@@ -32,7 +32,7 @@ const NavBar = () => {
             {/* Navigation items */}
             {navBarItemsData.map((item: INavBarItemsData) => (
               <li key={item.name}>
-                <LinkItem name={item.name} to={item.href} />
+                <LinkItem to={item.href}>{item.name}</LinkItem>
               </li>
             ))}
           </ul>

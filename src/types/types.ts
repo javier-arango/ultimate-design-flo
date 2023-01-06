@@ -24,6 +24,6 @@ export type IconName =
   | "ruler"
   | "deliveryTruck";
 
-export type LabelSize = "sm" | "md" | "lg";
+export type LabelSize = "sm" | "md" | "lg" | "responsive";
 
 export type ContainerSize = "sm" | "lg";

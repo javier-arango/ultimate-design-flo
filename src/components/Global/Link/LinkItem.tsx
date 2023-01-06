@@ -3,14 +3,32 @@ import { ILInk } from "../../../types";
 
 import Link from "next/link";
 
-const LinkItem = ({ name, to, className }: ILInk) => {
+const LinkItem = ({
+  to,
+  external,
+  className,
+  children,
+}: React.PropsWithChildren<ILInk>) => {
   return (
-    <Link
-      className={`label-responsive ${styles.link} ${className}`}
-      href={!to ? "/" : to}
-    >
-      {name}
-    </Link>
+    <>
+      {!external ? (
+        <Link
+          className={`label-responsive ${styles.link} ${className}`}
+          href={!to ? "/" : to}
+        >
+          {children}
+        </Link>
+      ) : (
+        <a
+          className={`label-responsive ${styles.link} ${className}`}
+          href={!to ? "/" : to}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      )}
+    </>
   );
 };
 

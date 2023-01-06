@@ -1,9 +1,8 @@
 import styles from "./Footer.module.css";
 
-import { Container } from "../Global";
-import FooterItem from "./FooterItem/FooterItem";
+import { Container, Icon, LinkItem } from "../Global";
 import { footerItemsData } from "../../data";
-import { FacebookIcon, InstagramIcon } from "../Global/Icon/Icons";
+import FooterItem from "./FooterItem/FooterItem";
 
 const Footer = () => {
   return (
@@ -19,13 +18,23 @@ const Footer = () => {
             />
           ))}
         </div>
+
         <div className={styles.footerBottomInformation}>
-            <div className={styles.footerCopyright}>
-              © Ultimate Design Flo. All rights reserved.
-            </div>
-            <div className={styles.footerSocials}>
-              Follow Us <FacebookIcon width={20} height={20} color={"#D4C4BC"} /> <InstagramIcon width={20} height={20} color={"#D4C4BC"} />
-            </div>
+          <p className="label-responsive text-align-center">
+            © Ultimate Design Flo. All rights reserved.
+          </p>
+
+          <div className={styles.footerSocials}>
+            <p className="label-responsive">Follow Us</p>
+
+            <LinkItem to="https://www.facebook.com/" external>
+              <Icon name="facebook" width={20} height={20} color={"#D4C4BC"} />
+            </LinkItem>
+
+            <LinkItem to="https://www.instagram.com/" external>
+              <Icon name="instagram" width={20} height={20} color={"#D4C4BC"} />
+            </LinkItem>
+          </div>
         </div>
       </Container>
     </footer>

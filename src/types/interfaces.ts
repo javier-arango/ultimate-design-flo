@@ -33,8 +33,8 @@ export interface IButton {
 }
 
 export interface ILInk {
-  name: string;
   to?: string;
+  external?: boolean;
   className?: string;
 }
 
