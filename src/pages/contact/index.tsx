@@ -9,7 +9,7 @@ export default function Contact() {
       <NavBarInfo />
       <NavBar />
       <h1 className="display-lg">Contact</h1>
-      <LinkItem name="Go Back Home" />
+      <LinkItem>Go Back Home</LinkItem>
     </>
   );
 }

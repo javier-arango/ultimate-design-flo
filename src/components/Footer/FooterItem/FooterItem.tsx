@@ -13,7 +13,6 @@ const FooterItem = ({ label, icon, info }: IFooterItem) => {
     <div className={styles.footerItemContainer}>
       <LabelAndIcon
         label={label}
-        labelSize="lg"
         iconName={icon}
         iconProperties={{
           width: 24,
@@ -22,7 +21,7 @@ const FooterItem = ({ label, icon, info }: IFooterItem) => {
         }}
       />
 
-      <p className="overline-lg">{info}</p>
+      <p className="overline-responsive">{info}</p>
     </div>
   );
 };

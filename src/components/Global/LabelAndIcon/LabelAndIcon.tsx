@@ -4,7 +4,7 @@ import { ILabelAndIcon } from "../../../types";
 
 const LabelAndIcon = ({
   label,
-  labelSize = "sm",
+  labelSize = "responsive",
   iconName,
   iconProperties = {
     width: 16,

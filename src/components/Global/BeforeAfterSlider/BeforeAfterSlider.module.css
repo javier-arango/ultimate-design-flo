@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  max-width: 424px;
+  height: 327px;
+  border: 2px solid white;
+
+  margin: 50px auto;
+  overflow: hidden;
+  box-shadow: 0 15px 15px rgb(0 0 0 / 25%);
+}
+
+.handle {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: white;
+  z-index: 3;
+  cursor: col-resize;
+  top: 0;
+}
+
+.img {
+  object-fit: cover;
+  height: 100%;
+  vertical-align: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.comparison-item {
+  overflow: hidden;
+}
+
+.comparisonItem.top {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.label {
+  position: absolute;
+  z-index: 3;
+}
+
+.labelLeft {
+  left: 0;
+  padding: 12px 0 0 64px;
+}
+
+.labelRight {
+  right: 0;
+  padding: 12px 64px 0 0;
+}

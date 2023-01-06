@@ -32,7 +32,7 @@ const BgImageContainer = ({
         fill
         className={styles.imgContainer}
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@`}
+        blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
       />
 
       {/* Blur background with a color of 50% opacity */}

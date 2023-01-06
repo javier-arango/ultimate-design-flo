@@ -370,6 +370,11 @@ hr,
     margin: 0px var(--layout-grid-md);
   }
 
+  /* Overline Small | Responsive */
+  .overline-responsive {
+    font-size: var(--font-text-x-sm);
+  }
+
   /* Label Medium | Responsive */
   .label-responsive {
     font-size: var(--font-text-md);
