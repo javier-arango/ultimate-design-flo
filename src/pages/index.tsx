@@ -5,8 +5,16 @@ import Hero from "../components/Hero/Hero";
 import NavBarInfo from "../components/NavBarInfo/NavBarInfo";
 import Footer from "../components/Footer/Footer";
 import HomeContent from "../components/HomeContent/HomeContent";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  let router = useRouter();
+
+  // Condition base redirecting
+  function redirect() {
+    router.push("/contact");
+  }
+
   return (
     <>
       <Head>
@@ -62,7 +70,21 @@ export default function Home() {
         {/* Navigation Info */}
         <NavBarInfo />
         <NavBar />
-        <Hero />
+
+        <Hero
+          image={{
+            src: "/assets/hero-images/home-page-img.png",
+            alt: "Home page image for Ultimate Design Flow website",
+          }}
+          title="Welcome To"
+          headline="Ultimate Design Flo"
+          paragraph="Upgrade your home's style with our furniture makeover magic!"
+          button={{
+            label: "Contact Now",
+            onClick: redirect,
+          }}
+        />
+
         <HomeContent />
         <Footer />
       </main>

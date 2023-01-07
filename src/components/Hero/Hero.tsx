@@ -1,33 +1,38 @@
 import styles from "./Hero.module.css";
 
 import { Button, Container, BgImageContainer } from "../Global";
-import { useRouter } from "next/router";
+import { IHero } from "../../types";
 
-const Hero = () => {
-  let router = useRouter();
-
-  // Condition base redirecting
-  function redirect() {
-    router.push("/contact");
-  }
-
+const Hero = ({
+  image,
+  containerSize = "lg",
+  title,
+  headline,
+  paragraph,
+  button,
+}: IHero) => {
   return (
     <BgImageContainer
-      image="/assets/hero-images/home-page-img.png"
-      alt="Home page image for Ultimate Design Flow website"
-      containerSize="lg"
+      image={image.src}
+      alt={image.alt}
+      containerSize={containerSize}
       className="text-align-center"
     >
       <Container flexDirection="column">
-        <p className={`overline-lg ${styles.heroOverline}`}>Welcome To</p>
-        <h1 className={`display-sm ${styles.heroDisplay}`}>
-          Ultimate Design Flo
-        </h1>
-        <p className={`paragraph-lg ${styles.heroParagraph}`}>
-          Upgrade your home's style with our furniture makeover magic!
-        </p>
+        <p className={`overline-lg ${styles.heroOverline}`}>{title}</p>
+        <h1 className={`display-sm ${styles.heroDisplay}`}>{headline}</h1>
+        <p className={`paragraph-lg ${styles.heroParagraph}`}>{paragraph}</p>
 
-        <Button label="Contact Now" onClick={redirect} />
+        {!button ? (
+          <></>
+        ) : (
+          <Button
+            label={button.label}
+            type={button.type}
+            variant={button.variant}
+            onClick={button.onClick}
+          />
+        )}
       </Container>
     </BgImageContainer>
   );
