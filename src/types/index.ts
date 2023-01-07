@@ -8,6 +8,7 @@ export type {
   IContainer,
   IBgImageContainer,
   ILabelAndIcon,
+  IInfoBlock,
   IHero,
 } from "./interfaces";
 

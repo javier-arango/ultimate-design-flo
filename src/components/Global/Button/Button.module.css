@@ -25,14 +25,14 @@
 
 /* Primary Button Hover */
 .primaryButton:hover {
-  background: var(--color-dandelion-wine);
-  color: var(--color-gold-taffeta);
+  background: var(--color-button-hover);
+  /* color: var(--color-gold-taffeta); */
 }
 
 /* Secondary Button Hover */
 .secondaryButton:hover {
-  border-color: var(--color-dandelion-wine);
-  color: var(--color-dandelion-wine);
+  border-color: var(--color-button-hover);
+  color: var(--color-button-hover);
 }
 
 /* Medium Screen */

@@ -9,12 +9,12 @@ function containerStyled(
   justifyContent: JustifyContent
 ) {
   return {
-    display: "flex" as "flex",
-    alignItems: "center" as "center",
-    flexWrap: "wrap" as "wrap",
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
     flexDirection: flexDirection,
     justifyContent: justifyContent,
-  };
+  } as React.CSSProperties;
 }
 
 const Container = ({
