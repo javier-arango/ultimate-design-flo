@@ -25,6 +25,11 @@ export interface IIcon {
   color: string;
 }
 
+export interface IImage {
+  src: string;
+  alt: string;
+}
+
 export interface IButton {
   label: string;
   type?: ButtonType;
@@ -56,4 +61,13 @@ export interface ILabelAndIcon {
   labelSize?: LabelSize;
   iconName: IconName;
   iconProperties?: IIcon;
+}
+
+export interface IHero {
+  image: IImage;
+  containerSize?: ContainerSize;
+  title?: string;
+  headline: string;
+  paragraph: string;
+  button?: IButton;
 }

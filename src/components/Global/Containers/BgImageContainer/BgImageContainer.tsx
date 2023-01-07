@@ -7,13 +7,13 @@ interface Props extends IBgImageContainer {
 }
 
 function containerStyled(containerSize: ContainerSize) {
-  const size = containerSize === "sm" ? 30 : 70;
+  const size = containerSize === "sm" ? 40 : 70;
 
   return {
     display: "block",
-    position: "relative" as "relative",
+    position: "relative",
     height: `${size}vh`,
-  };
+  } as React.CSSProperties;
 }
 
 const BgImageContainer = ({

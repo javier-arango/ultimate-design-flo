@@ -2,11 +2,13 @@ export type {
   INavBarItemsData,
   IFooterItemsData,
   IIcon,
+  IImage,
   IButton,
   ILInk,
   IContainer,
   IBgImageContainer,
   ILabelAndIcon,
+  IHero,
 } from "./interfaces";
 
 export type {
