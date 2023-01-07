@@ -34,6 +34,7 @@ export interface IButton {
   label: string;
   type?: ButtonType;
   variant?: ButtonVariant;
+  className?: string;
   onClick?: () => void;
 }
 
@@ -63,11 +64,15 @@ export interface ILabelAndIcon {
   iconProperties?: IIcon;
 }
 
-export interface IHero {
-  image: IImage;
-  containerSize?: ContainerSize;
+export interface IInfoBlock {
   title?: string;
   headline: string;
   paragraph: string;
   button?: IButton;
+}
+
+export interface IHero {
+  image: IImage;
+  containerSize?: ContainerSize;
+  infoBlock: IInfoBlock;
 }

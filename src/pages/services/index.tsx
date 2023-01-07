@@ -1,7 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
 import { LinkItem } from "../../components/Global";
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/Global/Hero/Hero";
 
 export default function Services() {
   return (
@@ -16,8 +16,11 @@ export default function Services() {
           alt: "Service page image for Ultimate Design Flow website",
         }}
         containerSize="sm"
-        headline="Our Exclusive Jobs"
-        paragraph="Trust Our Professional Upholstery Team to Revitalize Your Home"
+        infoBlock={{
+          headline: "Our Exclusive Jobs",
+          paragraph:
+            "Trust Our Professional Upholstery Team to Revitalize Your Home",
+        }}
       />
 
       <h1 className="display-lg">Services</h1>
