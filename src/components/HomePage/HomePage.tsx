@@ -1,15 +1,11 @@
-import styles from "./HomeContent.module.css";
+import styles from "./HomePage.module.css";
 
 import { useRouter } from "next/router";
-import {
-  BeforeAfterSlider,
-  Button,
-  Container,
-  Hero,
-  InfoBlock,
-} from "../Global";
+import { Container, Hero, InfoBlock } from "../Global";
+import Services from "../Services/Services";
+import { servicesData } from "../../data";
 
-const HomeContent = () => {
+const HomePage = () => {
   let router = useRouter();
 
   return (
@@ -31,6 +27,7 @@ const HomeContent = () => {
         }}
       />
 
+      {/* About */}
       <InfoBlock
         headline="Our Story"
         paragraph="Founded in 2014, Ultimate Design Flo has been dedicated to providing
@@ -45,29 +42,23 @@ const HomeContent = () => {
         }}
       />
 
-      {/* <Container
-        className={`text-align-center ${styles.aboutContainer}`}
+      {/* Services */}
+      <Container
+        className="text-align-center padding-responsive"
         justifyContent="center"
         flexDirection="column"
       >
-        <h2 className={styles.headline}>Our Story</h2>
+        {/* Title */}
+        <p className="overline-responsive">Our Services</p>
+        <h2 className={styles.headline}>
+          Transform your furniture vision into reality
+        </h2>
 
-        <p className={`paragraph-lg ${styles.paragraph}`}>
-          Founded in 2014, Ultimate Design Flo has been dedicated to providing
-          expert furniture upholstery services to customers in the Florida area
-          for over 8 years. With a team of skilled upholsterers and a commitment
-          to quality craftsmanship, we have built a reputation for excellence
-          within the industry.
-        </p>
-
-        <Button
-          label="Learn More"
-          variant="secondary"
-          onClick={() => router.push("/about")}
-        />
-      </Container> */}
+        {/* ImageCard with the Services provided */}
+        <Services services={servicesData.slice(0, 3)} />
+      </Container>
     </>
   );
 };
 
-export default HomeContent;
+export default HomePage;

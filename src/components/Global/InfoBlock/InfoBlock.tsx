@@ -7,7 +7,7 @@ import { IInfoBlock } from "../../../types";
 const InfoBlock = ({ title, headline, paragraph, button }: IInfoBlock) => {
   return (
     <Container
-      className={`text-align-center ${styles.container}`}
+      className={`text-align-center padding-responsive`}
       justifyContent="center"
       flexDirection="column"
     >

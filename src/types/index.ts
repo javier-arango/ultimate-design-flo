@@ -3,6 +3,7 @@ export type {
   IFooterItemsData,
   IIcon,
   IImage,
+  IImageCard,
   IButton,
   ILInk,
   IContainer,

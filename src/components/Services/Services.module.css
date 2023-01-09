@@ -1,0 +1,19 @@
+.serviceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-xxx-big);
+  padding: 48px 0;
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 600px) and (max-width: 1135px) {
+}
+
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .serviceContainer {
+    padding: 24px 0;
+  }
+}

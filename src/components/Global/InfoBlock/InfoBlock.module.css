@@ -1,7 +1,3 @@
-.container {
-  padding: var(--space-xx-lg) 0;
-}
-
 .overline {
   padding-bottom: var(--space-sm);
 }
@@ -18,10 +14,6 @@
 
 /* Medium Screen */
 @media only screen and (min-width: 600px) and (max-width: 1135px) {
-  .container {
-    padding: var(--space-x-lg) 0;
-  }
-
   .overline {
     padding-bottom: calc(var(--space-sm) - var(--space-xx-sm));
   }
@@ -37,10 +29,6 @@
 
 /* Small Screen */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
-  .container {
-    padding: var(--space-xxx-big) 0;
-  }
-
   .overline {
     padding-bottom: calc(var(--space-sm) - var(--space-x-sm));
   }

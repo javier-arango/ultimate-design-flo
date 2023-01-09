@@ -1,7 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import { LinkItem } from "../../components/Global";
-import Hero from "../../components/Global/Hero/Hero";
+import AboutPage from "../../components/AboutPage/AboutPage";
+import Footer from "../../components/Footer/Footer";
 
 export default function About() {
   return (
@@ -9,22 +9,8 @@ export default function About() {
       {/* Navigation Info */}
       <NavBarInfo />
       <NavBar />
-
-      <Hero
-        image={{
-          src: "/assets/hero-images/story-page-img.png",
-          alt: "About page image for Ultimate Design Flow website",
-        }}
-        containerSize="sm"
-        infoBlock={{
-          headline: "Our Story",
-          paragraph:
-            "Discover the Values That Guide Our Business and Set Us Apart",
-        }}
-      />
-
-      <h1 className="display-lg">About</h1>
-      <LinkItem>Go Back Home</LinkItem>
+      <AboutPage />
+      <Footer />
     </>
   );
 }

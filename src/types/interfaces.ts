@@ -30,6 +30,12 @@ export interface IImage {
   alt: string;
 }
 
+export interface IImageCard {
+  image: IImage;
+  serviceName: string;
+  serviceDescription: string;
+}
+
 export interface IButton {
   label: string;
   type?: ButtonType;

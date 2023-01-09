@@ -10,6 +10,7 @@ function containerStyled(containerSize: ContainerSize) {
   const size = containerSize === "sm" ? 40 : 70;
 
   return {
+    overflow: "hidden",
     display: "block",
     position: "relative",
     height: `${size}vh`,
@@ -24,7 +25,10 @@ const BgImageContainer = ({
   children,
 }: Props) => {
   return (
-    <div className={`${className}`} style={containerStyled(containerSize)}>
+    <div
+      className={`${className} ${styles.container}`}
+      style={containerStyled(containerSize)}
+    >
       {/* Image as background */}
       <Image
         src={image}

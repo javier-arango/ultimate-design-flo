@@ -6,3 +6,4 @@ export { default as LabelAndIcon } from "./LabelAndIcon/LabelAndIcon";
 export { default as BeforeAfterSlider } from "./BeforeAfterSlider/BeforeAfterSlider";
 export { default as Hero } from "./Hero/Hero";
 export { default as InfoBlock } from "./InfoBlock/InfoBlock";
+export { default as ImageCard } from "./ImageCard/ImageCard";
