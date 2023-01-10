@@ -89,3 +89,11 @@ export interface IIconCard {
   title: string;
   description: string;
 }
+
+export interface IServiceAreaLocation {
+  name: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
+}

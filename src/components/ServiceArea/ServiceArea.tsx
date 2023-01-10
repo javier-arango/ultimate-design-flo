@@ -1,24 +1,24 @@
 import styles from "./ServiceArea.module.css";
 
 import { InfoBlock, LabelAndIcon, Map } from "../Global";
-import { serviceArea } from "../../data";
+import { serviceAreaLocation } from "../../data";
 
 const ServiceArea = () => {
   return (
     <>
       <InfoBlock headline="Service Area">
+        <Map />
+
         <h6 className={styles.headline}>
           Ultimate Design Flo provides services to the following communities:
         </h6>
 
-        <Map />
-
         <ul className={`text-align-left ${styles.locationList}`}>
-          {serviceArea.map((area) => (
-            <li key={area} className={styles.listItem}>
+          {serviceAreaLocation.map((area) => (
+            <li key={area.name} className={styles.listItem}>
               <LabelAndIcon
                 iconName="location"
-                label={area}
+                label={area.name}
                 iconProperties={{
                   width: 24,
                   height: 24,

@@ -12,6 +12,7 @@ export type {
   IInfoBlock,
   IHero,
   IIconCard,
+  IServiceAreaLocation,
 } from "./interfaces";
 
 export type {

@@ -3,5 +3,5 @@ export {
   footerItemsData,
   servicesData,
   companyQualities,
-  serviceArea,
+  serviceAreaLocation,
 } from "./constants";
