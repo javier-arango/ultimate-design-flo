@@ -1,7 +1,5 @@
-import styles from "./HomePage.module.css";
-
 import { useRouter } from "next/router";
-import { Container, Hero, InfoBlock } from "../Global";
+import { Hero, InfoBlock } from "../Global";
 import Services from "../Services/Services";
 import { servicesData } from "../../data";
 
@@ -10,6 +8,7 @@ const HomePage = () => {
 
   return (
     <>
+      {/* Hero image with title */}
       <Hero
         image={{
           src: "/assets/hero-images/home-page-img.png",
@@ -27,7 +26,7 @@ const HomePage = () => {
         }}
       />
 
-      {/* About */}
+      {/* Little story about the business */}
       <InfoBlock
         headline="Our Story"
         paragraph="Founded in 2014, Ultimate Design Flo has been dedicated to providing
@@ -42,21 +41,17 @@ const HomePage = () => {
         }}
       />
 
-      {/* Services */}
-      <Container
-        className="text-align-center padding-responsive"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        {/* Title */}
-        <p className="overline-responsive">Our Services</p>
-        <h2 className={styles.headline}>
-          Transform your furniture vision into reality
-        </h2>
-
-        {/* ImageCard with the Services provided */}
-        <Services services={servicesData.slice(0, 3)} />
-      </Container>
+      {/* Services provided by the business*/}
+      <Services
+        title="Our Services"
+        headline="Transform your furniture vision into reality"
+        services={servicesData.slice(0, 3)}
+        button={{
+          label: "Learn More",
+          variant: "secondary",
+          onClick: () => router.push("/services"),
+        }}
+      />
     </>
   );
 };

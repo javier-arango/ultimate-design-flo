@@ -7,6 +7,8 @@
   overflow: hidden;
   margin-bottom: var(--space-x-big);
   height: 282px;
+  box-shadow: var(--shadow-xx-lg);
+  border-radius: var(--border-radius-sm);
 }
 
 .img {

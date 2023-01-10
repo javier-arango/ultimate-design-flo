@@ -7,3 +7,5 @@ export { default as BeforeAfterSlider } from "./BeforeAfterSlider/BeforeAfterSli
 export { default as Hero } from "./Hero/Hero";
 export { default as InfoBlock } from "./InfoBlock/InfoBlock";
 export { default as ImageCard } from "./ImageCard/ImageCard";
+export { default as IconCard } from "./IconCard/IconCard";
+export { default as Map } from "./Map/Map";

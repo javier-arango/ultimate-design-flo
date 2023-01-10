@@ -11,6 +11,7 @@ export type {
   ILabelAndIcon,
   IInfoBlock,
   IHero,
+  IIconCard,
 } from "./interfaces";
 
 export type {

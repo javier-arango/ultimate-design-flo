@@ -1,0 +1,29 @@
+.iconCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 282px;
+}
+
+.title {
+  padding-top: var(--space-md);
+}
+
+.description {
+  padding-top: var(--space-big);
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 600px) and (max-width: 1135px) {
+  .iconCardContainer {
+    width: calc(282px - 32px);
+  }
+}
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .iconCardContainer {
+    width: calc(282px - 48px);
+  }
+}

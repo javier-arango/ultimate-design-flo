@@ -20,8 +20,8 @@ function containerStyled(
 const Container = ({
   flexDirection = "row",
   justifyContent = "space-between",
-  children,
   className,
+  children,
 }: Props) => {
   return (
     <div

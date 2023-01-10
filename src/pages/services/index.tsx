@@ -2,6 +2,8 @@ import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
 import { LinkItem } from "../../components/Global";
 import Hero from "../../components/Global/Hero/Hero";
+import Footer from "../../components/Footer/Footer";
+import ServicesPage from "../../components/ServicesPage/ServicesPage";
 
 export default function Services() {
   return (
@@ -22,9 +24,8 @@ export default function Services() {
             "Trust Our Professional Upholstery Team to Revitalize Your Home",
         }}
       />
-
-      <h1 className="display-lg">Services</h1>
-      <LinkItem>Go Back Home</LinkItem>
+      <ServicesPage />
+      <Footer />
     </>
   );
 }

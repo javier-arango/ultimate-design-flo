@@ -73,7 +73,7 @@ export interface ILabelAndIcon {
 export interface IInfoBlock {
   title?: string;
   headline: string;
-  paragraph: string;
+  paragraph?: string;
   button?: IButton;
 }
 
@@ -81,4 +81,11 @@ export interface IHero {
   image: IImage;
   containerSize?: ContainerSize;
   infoBlock: IInfoBlock;
+}
+
+export interface IIconCard {
+  iconName: IconName;
+  iconStyle?: IIcon;
+  title: string;
+  description: string;
 }
