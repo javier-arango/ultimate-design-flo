@@ -1,0 +1,22 @@
+.locationList {
+  padding-top: var(--space-xxx-big);
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: var(--space-x-lg);
+  grid-row-gap: var(--space-md);
+}
+
+/* Medium Screen */
+/* @media only screen and (min-width: 600px) and (max-width: 1135px) {
+} */
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .locationList {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: var(--space-xx-big);
+  }
+}

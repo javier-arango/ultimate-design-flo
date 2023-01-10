@@ -1,1 +1,7 @@
-export { navBarItemsData, footerItemsData } from "./constants";
+export {
+  navBarItemsData,
+  footerItemsData,
+  servicesData,
+  companyQualities,
+  serviceAreaLocation,
+} from "./constants";

@@ -52,22 +52,22 @@
   Shadows
   -------------------------------- */
   /* Shadows  Small */
-  --shadow-x-sm: 0px 1px 2px var(--color-sambucus);
-  --shadow-sm: 0px 1px 2px -1px var(--color-sambucus),
-    0px 1px 3px var(--color-sambucus);
+  --shadow-x-sm: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0px 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 3px rgba(16, 24, 40, 0.1);
 
   /* Shadows  Medium */
-  --shadow-md: 0px 2px 4px -2px var(--color-sambucus),
-    0px 4px 6px -1px var(--color-sambucus);
+  --shadow-md: 0px 2px 4px -2px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -1px rgba(16, 24, 40, 0.1);
 
   /* Shadows  Large */
-  --shadow-lg: 0px 4px 6px -4px var(--color-sambucus),
-    0px 10px 15px -3px var(--color-sambucus);
+  --shadow-lg: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(16, 24, 40, 0.1);
 
-  --shadow-x-lg: 0px 8px 10px -6px var(--color-sambucus),
-    0px 20px 25px -5px var(--color-sambucus);
+  --shadow-x-lg: 0px 8px 10px -6px rgba(0, 0, 0, 0.1),
+    0px 20px 25px -5px rgba(16, 24, 40, 0.1);
 
-  --shadow-xx-lg: 0px 25px 50px -12px var(--color-sambucus);
+  --shadow-xx-lg: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   /* -------------------------------- 
   Blur

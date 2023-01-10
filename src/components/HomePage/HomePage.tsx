@@ -1,19 +1,14 @@
-import styles from "./HomeContent.module.css";
-
 import { useRouter } from "next/router";
-import {
-  BeforeAfterSlider,
-  Button,
-  Container,
-  Hero,
-  InfoBlock,
-} from "../Global";
+import { Hero, InfoBlock } from "../Global";
+import Services from "../Services/Services";
+import { servicesData } from "../../data";
 
-const HomeContent = () => {
+const HomePage = () => {
   let router = useRouter();
 
   return (
     <>
+      {/* Hero image with title */}
       <Hero
         image={{
           src: "/assets/hero-images/home-page-img.png",
@@ -31,6 +26,7 @@ const HomeContent = () => {
         }}
       />
 
+      {/* Little story about the business */}
       <InfoBlock
         headline="Our Story"
         paragraph="Founded in 2014, Ultimate Design Flo has been dedicated to providing
@@ -45,29 +41,19 @@ const HomeContent = () => {
         }}
       />
 
-      {/* <Container
-        className={`text-align-center ${styles.aboutContainer}`}
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <h2 className={styles.headline}>Our Story</h2>
-
-        <p className={`paragraph-lg ${styles.paragraph}`}>
-          Founded in 2014, Ultimate Design Flo has been dedicated to providing
-          expert furniture upholstery services to customers in the Florida area
-          for over 8 years. With a team of skilled upholsterers and a commitment
-          to quality craftsmanship, we have built a reputation for excellence
-          within the industry.
-        </p>
-
-        <Button
-          label="Learn More"
-          variant="secondary"
-          onClick={() => router.push("/about")}
-        />
-      </Container> */}
+      {/* Services provided by the business*/}
+      <Services
+        title="Our Services"
+        headline="Transform your furniture vision into reality"
+        services={servicesData.slice(0, 3)}
+        button={{
+          label: "Learn More",
+          variant: "secondary",
+          onClick: () => router.push("/services"),
+        }}
+      />
     </>
   );
 };
 
-export default HomeContent;
+export default HomePage;

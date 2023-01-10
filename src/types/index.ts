@@ -3,6 +3,7 @@ export type {
   IFooterItemsData,
   IIcon,
   IImage,
+  IImageCard,
   IButton,
   ILInk,
   IContainer,
@@ -10,6 +11,8 @@ export type {
   ILabelAndIcon,
   IInfoBlock,
   IHero,
+  IIconCard,
+  IServiceAreaLocation,
 } from "./interfaces";
 
 export type {

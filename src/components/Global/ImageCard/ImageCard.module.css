@@ -1,0 +1,46 @@
+.imageCardContainer {
+  width: 282px;
+}
+
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-x-big);
+  height: 282px;
+  box-shadow: var(--shadow-xx-lg);
+  border-radius: var(--border-radius-sm);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.serviceInfoContainer {
+  text-align: left;
+}
+
+.serviceName {
+  padding-bottom: var(--space-x-sm);
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 600px) and (max-width: 1135px) {
+  .imageCardContainer {
+    width: calc(282px - 32px);
+  }
+
+  .imgContainer {
+    margin-bottom: var(--space-big);
+  }
+}
+
+/* Small Screen - Mobile */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .imageCardContainer {
+    width: calc(282px - 48px);
+  }
+
+  .imgContainer {
+    margin-bottom: var(--space-md);
+  }
+}

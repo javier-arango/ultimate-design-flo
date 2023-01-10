@@ -351,6 +351,11 @@ hr,
     margin: 0px var(--layout-grid-lg);
   }
 
+  /* Padding Large | Responsive */
+  .padding-responsive {
+    padding: var(--space-xx-lg) 0;
+  }
+
   /* Label Large | Responsive */
   .label-responsive {
     font-size: var(--font-text-lg);
@@ -370,6 +375,11 @@ hr,
     margin: 0px var(--layout-grid-md);
   }
 
+  /* Padding Medium | Responsive */
+  .padding-responsive {
+    padding: var(--space-x-lg) 0;
+  }
+
   /* Overline Small | Responsive */
   .overline-responsive {
     font-size: var(--font-text-x-sm);
@@ -387,6 +397,11 @@ hr,
   /* Margin Small | Responsive */
   .margin-responsive {
     margin: 0px var(--layout-grid-sm);
+  }
+
+  /* Padding Small | Responsive */
+  .padding-responsive {
+    padding: var(--space-xxx-big) 0;
   }
 
   /* Label Small | Responsive */

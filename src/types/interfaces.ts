@@ -30,6 +30,12 @@ export interface IImage {
   alt: string;
 }
 
+export interface IImageCard {
+  image: IImage;
+  serviceName: string;
+  serviceDescription: string;
+}
+
 export interface IButton {
   label: string;
   type?: ButtonType;
@@ -67,7 +73,7 @@ export interface ILabelAndIcon {
 export interface IInfoBlock {
   title?: string;
   headline: string;
-  paragraph: string;
+  paragraph?: string;
   button?: IButton;
 }
 
@@ -75,4 +81,19 @@ export interface IHero {
   image: IImage;
   containerSize?: ContainerSize;
   infoBlock: IInfoBlock;
+}
+
+export interface IIconCard {
+  iconName: IconName;
+  iconStyle?: IIcon;
+  title: string;
+  description: string;
+}
+
+export interface IServiceAreaLocation {
+  name: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
 }

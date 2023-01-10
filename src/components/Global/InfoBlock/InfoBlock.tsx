@@ -4,22 +4,44 @@ import Button from "../Button/Button";
 import { Container } from "../Containers";
 import { IInfoBlock } from "../../../types";
 
-const InfoBlock = ({ title, headline, paragraph, button }: IInfoBlock) => {
+interface Props extends IInfoBlock {
+  children?: JSX.Element | JSX.Element[];
+}
+
+const InfoBlock = ({ title, headline, paragraph, button, children }: Props) => {
   return (
     <Container
-      className={`text-align-center ${styles.container}`}
+      className={`text-align-center padding-responsive`}
       justifyContent="center"
       flexDirection="column"
     >
+      {/* Title */}
       {!title ? (
         <></>
       ) : (
         <p className={`overline-responsive ${styles.overline}`}>{title}</p>
       )}
 
-      <h2 className={`${styles.headline}`}>{headline}</h2>
-      <p className={`paragraph-lg ${styles.paragraph}`}>{paragraph}</p>
+      {/* Headline */}
+      <h2
+        className={
+          children && !paragraph ? styles.noPaddingBottom : styles.headline
+        }
+      >
+        {headline}
+      </h2>
 
+      {/* Paragraph */}
+      {!paragraph ? (
+        <></>
+      ) : (
+        <p className={`paragraph-lg ${styles.paragraph}`}>{paragraph}</p>
+      )}
+
+      {/* Children */}
+      <>{!children ? <></> : children}</>
+
+      {/* Button */}
       {!button ? (
         <></>
       ) : (

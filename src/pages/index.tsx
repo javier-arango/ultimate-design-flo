@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import NavBar from "../components/NavBar/NavBar";
 import NavBarInfo from "../components/NavBarInfo/NavBarInfo";
-import HomeContent from "../components/HomeContent/HomeContent";
+import HomePage from "../components/HomePage/HomePage";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
         {/* Navigation Info */}
         <NavBarInfo />
         <NavBar />
-        <HomeContent />
+        <HomePage />
         <Footer />
       </main>
     </>
