@@ -10,12 +10,12 @@ const ImageCard = ({ image, serviceName, serviceDescription }: IImageCard) => {
           src={image.src}
           alt={image.alt}
           fill
-          sizes="(max-width: 282px) 100vw,
-              (max-width: 250px) 50vw,
-              33vw"
           className={styles.img}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+          sizes="(max-width: 300px) 100vw,
+              (max-width: 250px) 50vw,
+              33vw"
         />
       </div>
 

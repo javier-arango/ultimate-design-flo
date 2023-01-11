@@ -13,6 +13,7 @@ export type {
   IHero,
   IIconCard,
   IServiceAreaLocation,
+  IFileData,
 } from "./interfaces";
 
 export type {

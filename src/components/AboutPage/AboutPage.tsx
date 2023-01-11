@@ -1,12 +1,11 @@
 import { Hero, InfoBlock } from "../Global";
-import styles from "./AboutPage.module.css";
 
 const AboutPage = () => {
   return (
     <>
       <Hero
         image={{
-          src: "/assets/hero-images/story-page-img.png",
+          src: "/assets/hero-images/story-page-img.webp",
           alt: "About page image for Ultimate Design Flow website",
         }}
         containerSize="sm"

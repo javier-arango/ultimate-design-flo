@@ -1,8 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import { LinkItem } from "../../components/Global";
-import Hero from "../../components/Global/Hero/Hero";
 import ContactPage from "../../components/ContactPage/ContactPage";
+import Footer from "../../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -10,20 +9,8 @@ export default function Contact() {
       {/* Navigation Info */}
       <NavBarInfo />
       <NavBar />
-
-      <Hero
-        image={{
-          src: "/assets/hero-images/contact-page-img.png",
-          alt: "Contact page image for Ultimate Design Flow website",
-        }}
-        containerSize="sm"
-        infoBlock={{
-          headline: "Contact Us",
-          paragraph: "Get in touch with us for expert upholstery services",
-        }}
-      />
-
       <ContactPage />
+      <Footer />
     </>
   );
 }

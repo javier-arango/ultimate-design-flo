@@ -11,7 +11,7 @@ const HomePage = () => {
       {/* Hero image with title */}
       <Hero
         image={{
-          src: "/assets/hero-images/home-page-img.png",
+          src: "/assets/hero-images/home-page-img.webp",
           alt: "Home page image for Ultimate Design Flow website",
         }}
         infoBlock={{
