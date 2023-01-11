@@ -1,5 +1,6 @@
 export {
   navBarItemsData,
+  contactInfoData,
   footerItemsData,
   servicesData,
   companyQualities,

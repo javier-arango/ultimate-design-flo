@@ -1,0 +1,10 @@
+.gridContainer {
+  background-color: red;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.imgStyle {
+  object-fit: cover;
+}

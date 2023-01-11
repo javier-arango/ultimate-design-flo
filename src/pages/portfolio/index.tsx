@@ -1,7 +1,8 @@
 import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import { LinkItem } from "../../components/Global";
 import Hero from "../../components/Global/Hero/Hero";
+import PortfolioPage from "../../components/PortfolioPage/PortfolioPage";
+import Footer from "../../components/Footer/Footer";
 
 export default function Portfolio() {
   return (
@@ -22,8 +23,8 @@ export default function Portfolio() {
         }}
       />
 
-      <h1 className="display-lg">Portfolio</h1>
-      <LinkItem>Go Back Home</LinkItem>
+      <PortfolioPage />
+      <Footer />
     </>
   );
 }

@@ -29,26 +29,33 @@ const navBarItemsData: INavBarItemsData[] = [
   },
 ];
 
+const contactInfoData = {
+  address: "5051 S State Rd 7 Ste. 505, Davie, FL 33314",
+  phone: "(954) 817-0721",
+  email: "ultimatedesignflo@gmail.com",
+  hours: "Mon - Fri: 8:00 AM - 4:30 PM",
+};
+
 const footerItemsData: IFooterItemsData[] = [
   {
     label: "Find Us",
     iconName: "location",
-    info: "5051 S State Rd 7 Ste. 505, Davie, FL 33314",
+    info: contactInfoData.address,
   },
   {
     label: "Call Us Today",
     iconName: "phone",
-    info: "(954) 817-0721",
+    info: contactInfoData.phone,
   },
   {
     label: "Email Us Now",
     iconName: "email",
-    info: "ultimatedesignflo@gmail.com",
+    info: contactInfoData.email,
   },
   {
     label: "Buisiness Hours",
     iconName: "office",
-    info: "Mon - Fri: 8:00 AM - 4:30 PM",
+    info: contactInfoData.hours,
   },
 ];
 
@@ -195,6 +202,7 @@ const serviceAreaLocation: IServiceAreaLocation[] = [
 
 export {
   navBarItemsData,
+  contactInfoData,
   footerItemsData,
   servicesData,
   companyQualities,
