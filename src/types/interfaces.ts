@@ -97,3 +97,8 @@ export interface IServiceAreaLocation {
     lng: number;
   };
 }
+
+export interface IFileData {
+  name: string;
+  path: string;
+}

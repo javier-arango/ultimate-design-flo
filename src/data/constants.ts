@@ -62,7 +62,7 @@ const footerItemsData: IFooterItemsData[] = [
 const servicesData: IImageCard[] = [
   {
     image: {
-      src: "/assets/service-images/upholstery.png",
+      src: "/assets/service-images/upholstery.webp",
       alt: "Upolstery Service Image",
     },
     serviceName: "Upholstery",
@@ -71,7 +71,7 @@ const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/custom-draperies.png",
+      src: "/assets/service-images/custom-draperies.webp",
       alt: "Custom Draperies Service Image",
     },
     serviceName: "Custom Draperies",
@@ -80,7 +80,7 @@ const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/furniture-touch-ups.png",
+      src: "/assets/service-images/furniture-touch-ups.webp",
       alt: "Furniture Touch-Ups Service Image",
     },
     serviceName: "Furniture Touch-Ups",
@@ -89,7 +89,7 @@ const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/general-repairs.png",
+      src: "/assets/service-images/general-repairs.webp",
       alt: "General Repairs Service Image",
     },
     serviceName: "General Repairs",
@@ -98,7 +98,7 @@ const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/remodeling.png",
+      src: "/assets/service-images/remodeling.webp",
       alt: "Remodeling Service Image",
     },
     serviceName: "Remodeling",
@@ -107,7 +107,7 @@ const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/restoration.png",
+      src: "/assets/service-images/restoration.webp",
       alt: "Restoration Service Image",
     },
     serviceName: "Restoration",
