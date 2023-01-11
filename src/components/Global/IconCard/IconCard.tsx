@@ -9,7 +9,7 @@ const IconCard = ({ iconName, iconStyle, title, description }: IIconCard) => {
     <div className={styles.iconCardContainer}>
       <Icon name={iconName} width={width} height={height} color={color} />
 
-      <h2 className={styles.title}>{title}</h2>
+      <h3 className={styles.title}>{title}</h3>
       <p className={`paragraph-md ${styles.description}`}>{description}</p>
     </div>
   );

@@ -2,6 +2,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
 import { LinkItem } from "../../components/Global";
 import Hero from "../../components/Global/Hero/Hero";
+import ContactPage from "../../components/ContactPage/ContactPage";
 
 export default function Contact() {
   return (
@@ -22,8 +23,7 @@ export default function Contact() {
         }}
       />
 
-      <h1 className="display-lg">Contact</h1>
-      <LinkItem>Go Back Home</LinkItem>
+      <ContactPage />
     </>
   );
 }
