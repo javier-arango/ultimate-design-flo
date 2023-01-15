@@ -28,7 +28,11 @@ const ServicesPage = () => {
       />
 
       {/* Why choosing this business */}
-      <CompanyQualities qualities={companyQualities} />
+      <CompanyQualities
+        containerTitle="Why Us"
+        containerHeadline="Find Out Why Our Upholstery Services Stand Out"
+        qualities={companyQualities}
+      />
 
       {/* Service Area */}
       <ServiceArea />

@@ -1,5 +1,5 @@
 import styles from "./PortfolioPage.module.css";
-import { Container, Hero } from "../Global";
+import { Container, EmptyDataMessage, Hero, Spinner } from "../Global";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { IFileData } from "../../types";
@@ -18,13 +18,8 @@ const PortfolioPage = () => {
       });
   }, []);
 
-  if (isLoading)
-    return <p className="label-responsive padding-responsive">Loading...</p>;
-
-  if (!data)
-    return (
-      <p className="label-responsive padding-responsive">No product images</p>
-    );
+  if (isLoading) return <Spinner />;
+  if (!data) return <EmptyDataMessage />;
 
   return (
     <>
@@ -51,9 +46,8 @@ const PortfolioPage = () => {
                 className={styles.imgStyle}
                 placeholder="blur"
                 blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
-                sizes="(max-width: 500px) 100vw,
-              (max-width: 450px) 50vw,
-              33vw"
+                sizes="(min-width: 66em) 33vw,
+            (min-width: 44em) 50vw, 100vw"
               />
             </div>
           ))}

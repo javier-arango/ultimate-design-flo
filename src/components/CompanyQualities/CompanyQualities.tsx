@@ -1,13 +1,17 @@
 import styles from "./CompanyQualities.module.css";
 
 import { IconCard, InfoBlock } from "../Global";
-import { IIconCard } from "../../types";
+import { ICompanyQualities, IIconCard } from "../../types";
 
-const CompanyQualities = ({ qualities }: { qualities: IIconCard[] }) => {
+const CompanyQualities = ({
+  containerTitle,
+  containerHeadline,
+  qualities,
+}: ICompanyQualities) => {
   if (!qualities) return null;
 
   return (
-    <InfoBlock title="Why Us" headline="Why Our Upholstery Services Stand Out">
+    <InfoBlock title={containerTitle} headline={containerHeadline}>
       <div className={styles.iconCardContainer}>
         {qualities.map((quality) => (
           <IconCard

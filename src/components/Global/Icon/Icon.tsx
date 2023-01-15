@@ -15,6 +15,7 @@ import {
   FlagIcon,
   RulerIcon,
   DeliveryTruckIcon,
+  CompareIcon,
 } from "./Icons";
 
 interface Props extends IIcon {
@@ -26,6 +27,7 @@ const Icon = ({ name, width, height, color }: Props) => {
   const icons = {
     email: <EmailIcon width={width} height={height} color={color} />,
     phone: <PhoneIcon width={width} height={height} color={color} />,
+    compare: <CompareIcon width={width} height={height} color={color} />,
     arrowCircleLeft: (
       <ArrowCircleLeftIcon width={width} height={height} color={color} />
     ),

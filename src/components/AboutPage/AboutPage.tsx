@@ -1,4 +1,25 @@
+import { IIconCard } from "../../types";
+import CompanyQualities from "../CompanyQualities/CompanyQualities";
 import { Hero, InfoBlock } from "../Global";
+import Testimonials from "../Testimonials/Testimonials";
+
+const qualities: IIconCard[] = [
+  {
+    iconName: "calendar",
+    title: "8+",
+    description: "Years in Business",
+  },
+  {
+    iconName: "person",
+    title: "200+",
+    description: "Happy Customers",
+  },
+  {
+    iconName: "flag",
+    title: "+2190",
+    description: "Projects Completed",
+  },
+];
 
 const AboutPage = () => {
   return (
@@ -28,6 +49,14 @@ const AboutPage = () => {
         repairs and custom cushions and pillows to help you get the perfect look for your home. No matter what your 
         furniture needs may be, we have the experience and expertise to help."
       />
+
+      <CompanyQualities
+        containerTitle="Discover"
+        containerHeadline="More About Us"
+        qualities={qualities}
+      />
+
+      <Testimonials />
     </>
   );
 };

@@ -28,6 +28,7 @@ const Map = () => {
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
       >
         <GoogleMap
+          id="google-map"
           mapContainerClassName={styles.mapStyles}
           center={defaultCenter}
           zoom={7}

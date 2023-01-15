@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import { Hero, InfoBlock } from "../Global";
 import Services from "../Services/Services";
-import { servicesData } from "../../data";
+import { featureProjectsData, servicesData } from "../../data";
+import FeatureProjects from "../FeatureProjects/FeatureProjects";
 
 const HomePage = () => {
   let router = useRouter();
@@ -52,6 +53,8 @@ const HomePage = () => {
           onClick: () => router.push("/services"),
         }}
       />
+
+      <FeatureProjects projects={featureProjectsData} />
     </>
   );
 };

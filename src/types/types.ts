@@ -10,6 +10,7 @@ export type JustifyContent =
 export type IconName =
   | "email"
   | "phone"
+  | "compare"
   | "arrowCircleLeft"
   | "arrowCircleRight"
   | "office"
