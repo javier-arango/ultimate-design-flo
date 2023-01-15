@@ -1,5 +1,6 @@
 .imageCardContainer {
   width: 282px;
+  aspect-ratio: auto 1 / 1;
 }
 
 .imgContainer {
@@ -25,9 +26,9 @@
 
 /* Medium Screen */
 @media only screen and (min-width: 600px) and (max-width: 1135px) {
-  .imageCardContainer {
+  /* .imageCardContainer {
     width: calc(282px - 32px);
-  }
+  } */
 
   .imgContainer {
     margin-bottom: var(--space-big);
@@ -36,9 +37,9 @@
 
 /* Small Screen - Mobile */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
-  .imageCardContainer {
+  /* .imageCardContainer {
     width: calc(282px - 48px);
-  }
+  } */
 
   .imgContainer {
     margin-bottom: var(--space-md);

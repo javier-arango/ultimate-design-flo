@@ -102,3 +102,24 @@ export interface IFileData {
   name: string;
   path: string;
 }
+
+export interface ICompanyQualities {
+  containerTitle?: string;
+  containerHeadline: string;
+  qualities: IIconCard[];
+}
+
+export interface ITestimonial {
+  clientQuote: string;
+  clientName: string;
+}
+
+export interface ICompareImages {
+  before: IImage;
+  after: IImage;
+}
+
+export interface IFeatureProjects {
+  projectName: string;
+  image: ICompareImages;
+}

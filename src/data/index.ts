@@ -5,4 +5,5 @@ export {
   servicesData,
   companyQualities,
   serviceAreaLocation,
+  featureProjectsData,
 } from "./constants";

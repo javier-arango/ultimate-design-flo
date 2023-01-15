@@ -14,6 +14,10 @@ export type {
   IIconCard,
   IServiceAreaLocation,
   IFileData,
+  ICompanyQualities,
+  ITestimonial,
+  ICompareImages,
+  IFeatureProjects,
 } from "./interfaces";
 
 export type {
