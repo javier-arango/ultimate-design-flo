@@ -1,8 +1,8 @@
 import styles from "./CompareImages.module.css";
 import Image from "next/image";
+import { ICompareImages } from "../../../lib";
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Icon from "../Icon/Icon";
-import { ICompareImages } from "../../../types";
 
 const CompareImages = ({ before, after }: ICompareImages) => {
   const [isResizing, setIsResizing] = useState<boolean>(false);

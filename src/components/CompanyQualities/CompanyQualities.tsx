@@ -1,7 +1,7 @@
 import styles from "./CompanyQualities.module.css";
 
 import { IconCard, InfoBlock } from "../Global";
-import { ICompanyQualities, IIconCard } from "../../types";
+import { ICompanyQualities } from "../../lib";
 
 const CompanyQualities = ({
   containerTitle,

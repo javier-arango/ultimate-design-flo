@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
+import { featureProjectsData, servicesData } from "../../data";
+
 import { Hero, InfoBlock } from "../Global";
 import Services from "../Services/Services";
-import { featureProjectsData, servicesData } from "../../data";
 import FeatureProjects from "../FeatureProjects/FeatureProjects";
 
 const HomePage = () => {

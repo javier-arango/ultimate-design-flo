@@ -1,4 +1,4 @@
-import { IIcon, IconName } from "../../../types";
+import { IIcon, TIconName } from "../../../lib";
 import {
   EmailIcon,
   PhoneIcon,
@@ -19,7 +19,7 @@ import {
 } from "./Icons";
 
 interface Props extends IIcon {
-  name: IconName;
+  name: TIconName;
 }
 
 const Icon = ({ name, width, height, color }: Props) => {

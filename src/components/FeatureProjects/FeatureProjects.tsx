@@ -1,6 +1,6 @@
 import styles from "./FeatureProjects.module.css";
+import { IFeatureProjects } from "../../lib";
 import { CompareImages, InfoBlock } from "../Global";
-import { IFeatureProjects } from "../../types";
 
 const FeatureProjects = ({ projects }: { projects: IFeatureProjects[] }) => {
   return (

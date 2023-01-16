@@ -1,5 +1,5 @@
 import styles from "./LinkItem.module.css";
-import { ILInk } from "../../../types";
+import { ILInk } from "../../../lib";
 
 import Link from "next/link";
 

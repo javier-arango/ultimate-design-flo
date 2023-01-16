@@ -1,6 +1,6 @@
 import styles from "./ImageCard.module.css";
 import Image from "next/image";
-import { IImageCard } from "../../../types";
+import { IImageCard } from "../../../lib";
 
 const ImageCard = ({ image, serviceName, serviceDescription }: IImageCard) => {
   return (

@@ -1,7 +1,9 @@
 import styles from "./ContactPage.module.css";
 
-import { Hero, IconCard, InfoBlock } from "../Global";
 import { contactInfoData } from "../../data";
+
+import { Hero, IconCard, InfoBlock } from "../Global";
+import MessageForm from "../MessageForm/MessageForm";
 
 const ContactPage = () => {
   return (
@@ -39,6 +41,8 @@ const ContactPage = () => {
           />
         </div>
       </InfoBlock>
+
+      <MessageForm />
     </>
   );
 };

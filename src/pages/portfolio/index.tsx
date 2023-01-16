@@ -1,7 +1,4 @@
-import NavBar from "../../components/NavBar/NavBar";
-import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import PortfolioPage from "../../components/PortfolioPage/PortfolioPage";
-import Footer from "../../components/Footer/Footer";
+import { NavBar, NavBarInfo, PortfolioPage, Footer } from "../../components";
 
 export default function Portfolio() {
   return (

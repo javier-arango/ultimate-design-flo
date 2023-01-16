@@ -1,5 +1,5 @@
 import styles from "./Testimonial.module.css";
-import { ITestimonial } from "../../../types";
+import { ITestimonial } from "../../../lib";
 
 const Testimonial = ({ clientQuote, clientName }: ITestimonial) => {
   return (

@@ -1,4 +1,4 @@
-import { IIcon } from "../../../types";
+import { IIcon } from "../../../lib";
 
 const EmailIcon = ({ width, height, color }: IIcon) => {
   return (

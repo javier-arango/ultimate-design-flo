@@ -1,8 +1,9 @@
 import styles from "./PortfolioPage.module.css";
-import { Container, EmptyDataMessage, Hero, Spinner } from "../Global";
-import Image from "next/image";
+import { IFileData } from "../../lib";
 import { useState, useEffect } from "react";
-import { IFileData } from "../../types";
+
+import Image from "next/image";
+import { Container, EmptyDataMessage, Hero, Spinner } from "../Global";
 
 const PortfolioPage = () => {
   const [data, setData] = useState<IFileData[]>([] as IFileData[]);

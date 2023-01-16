@@ -1,7 +1,4 @@
-import NavBar from "../../components/NavBar/NavBar";
-import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import ContactPage from "../../components/ContactPage/ContactPage";
-import Footer from "../../components/Footer/Footer";
+import { NavBar, NavBarInfo, ContactPage, Footer } from "../../components";
 
 export default function Contact() {
   return (

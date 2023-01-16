@@ -1,4 +1,7 @@
 import styles from "./Map.module.css";
+import { IServiceAreaLocation } from "../../../lib";
+import { useState } from "react";
+import { serviceAreaLocationData } from "../../../data";
 
 import {
   GoogleMap,
@@ -6,9 +9,6 @@ import {
   LoadScriptNext,
   Marker,
 } from "@react-google-maps/api";
-import { useState } from "react";
-import { IServiceAreaLocation } from "../../../types";
-import { serviceAreaLocation } from "../../../data";
 
 const defaultCenter = {
   lat: 26.3014,
@@ -33,7 +33,7 @@ const Map = () => {
           center={defaultCenter}
           zoom={7}
         >
-          {serviceAreaLocation.map((area) => {
+          {serviceAreaLocationData.map((area) => {
             return (
               <Marker
                 key={area.name}

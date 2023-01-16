@@ -1,4 +1,4 @@
-import { servicesData, companyQualities } from "../../data";
+import { servicesData, companyQualitiesData } from "../../data";
 import Services from "../Services/Services";
 import CompanyQualities from "../CompanyQualities/CompanyQualities";
 import ServiceArea from "../ServiceArea/ServiceArea";
@@ -31,7 +31,7 @@ const ServicesPage = () => {
       <CompanyQualities
         containerTitle="Why Us"
         containerHeadline="Find Out Why Our Upholstery Services Stand Out"
-        qualities={companyQualities}
+        qualities={companyQualitiesData}
       />
 
       {/* Service Area */}
