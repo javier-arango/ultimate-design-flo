@@ -1,6 +1,6 @@
 import styles from "./IconCard.module.css";
+import { IIconCard } from "../../../lib";
 import Icon from "../Icon/Icon";
-import { IIconCard } from "../../../types";
 
 const IconCard = ({ iconName, iconStyle, title, description }: IIconCard) => {
   const { width = 62, height = 62, color = "#51423B" } = iconStyle || {};

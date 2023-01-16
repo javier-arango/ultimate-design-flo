@@ -1,7 +1,6 @@
 import styles from "./ServiceArea.module.css";
-
+import { serviceAreaLocationData } from "../../data";
 import { InfoBlock, LabelAndIcon, Map } from "../Global";
-import { serviceAreaLocation } from "../../data";
 
 const ServiceArea = () => {
   return (
@@ -14,7 +13,7 @@ const ServiceArea = () => {
         </h6>
 
         <ul className={`text-align-left ${styles.locationList}`}>
-          {serviceAreaLocation.map((area) => (
+          {serviceAreaLocationData.map((area) => (
             <li key={area.name} className={styles.listItem}>
               <LabelAndIcon
                 iconName="location"

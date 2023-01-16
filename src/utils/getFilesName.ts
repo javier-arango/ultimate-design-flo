@@ -1,5 +1,5 @@
 import fs from "fs";
-import { IFileData } from "../types";
+import { IFileData } from "../lib";
 
 /**
  * Returns the files name and path from a given directory

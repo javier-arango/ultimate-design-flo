@@ -1,9 +1,5 @@
 import Head from "next/head";
-
-import NavBar from "../components/NavBar/NavBar";
-import NavBarInfo from "../components/NavBarInfo/NavBarInfo";
-import HomePage from "../components/HomePage/HomePage";
-import Footer from "../components/Footer/Footer";
+import { NavBar, NavBarInfo, HomePage, Footer } from "../components";
 
 export default function Home() {
   return (

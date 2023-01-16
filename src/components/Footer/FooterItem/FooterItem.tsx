@@ -1,10 +1,10 @@
-import { IconName } from "../../../types";
-import { LabelAndIcon } from "../../Global";
 import styles from "./FooterItem.module.css";
+import { TIconName } from "../../../lib";
+import { LabelAndIcon } from "../../Global";
 
 interface IFooterItem {
   label: string;
-  icon: IconName;
+  icon: TIconName;
   info: string;
 }
 

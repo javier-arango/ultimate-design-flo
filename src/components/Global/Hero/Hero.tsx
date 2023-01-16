@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 
-import { Button, Container, BgImageContainer } from "..";
-import { IHero } from "../../../types";
+import { IHero } from "../../../lib";
+import { Button, Container, BgImageContainer } from "../../Global";
 
 const Hero = ({ image, containerSize = "lg", infoBlock }: IHero) => {
   return (
@@ -19,7 +19,7 @@ const Hero = ({ image, containerSize = "lg", infoBlock }: IHero) => {
             {infoBlock.title}
           </p>
         )}
-        
+
         <h1 className={`display-sm ${styles.heroDisplay}`}>
           {infoBlock.headline}
         </h1>

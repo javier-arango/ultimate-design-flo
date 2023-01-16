@@ -1,6 +1,6 @@
 import styles from "./Services.module.css";
+import { IButton, IImageCard } from "../../lib";
 import { ImageCard, InfoBlock } from "../Global";
-import { IButton, IImageCard } from "../../types";
 
 interface Props {
   title: string;

@@ -1,5 +1,5 @@
 import styles from "./Button.module.css";
-import { IButton } from "../../../types";
+import { IButton } from "../../../lib";
 
 const Button = ({ label, type, variant, onClick, className }: IButton) => {
   return (

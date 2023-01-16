@@ -1,8 +1,8 @@
 import styles from "./InfoBlock.module.css";
+import { IInfoBlock } from "../../../lib";
 
 import Button from "../Button/Button";
 import { Container } from "../Containers";
-import { IInfoBlock } from "../../../types";
 
 interface Props extends IInfoBlock {
   children?: JSX.Element | JSX.Element[];
@@ -35,7 +35,13 @@ const InfoBlock = ({ title, headline, paragraph, button, children }: Props) => {
       {!paragraph ? (
         <></>
       ) : (
-        <p className={`paragraph-lg ${styles.paragraph}`}>{paragraph}</p>
+        <p
+          className={`paragraph-lg ${
+            children ? styles.noPaddingBottom : styles.paragraph
+          }`}
+        >
+          {paragraph}
+        </p>
       )}
 
       {/* Children */}

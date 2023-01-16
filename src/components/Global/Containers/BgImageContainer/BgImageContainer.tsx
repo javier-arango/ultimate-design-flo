@@ -1,12 +1,12 @@
 import styles from "./BgImageContainer.module.css";
-import { IBgImageContainer, ContainerSize } from "../../../../types";
+import { IBgImageContainer, TContainerSize } from "../../../../lib";
 import Image from "next/image";
 
 interface Props extends IBgImageContainer {
   children?: JSX.Element | JSX.Element[];
 }
 
-function containerStyled(containerSize: ContainerSize) {
+function containerStyled(containerSize: TContainerSize) {
   const size = containerSize === "sm" ? 40 : 70;
 
   return {

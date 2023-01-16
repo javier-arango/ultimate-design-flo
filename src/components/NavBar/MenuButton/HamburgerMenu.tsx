@@ -1,5 +1,4 @@
 import styles from "./HamburgerMenu.module.css";
-import { useState } from "react";
 
 interface IHamburgerMenu {
   open: boolean;

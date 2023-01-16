@@ -1,10 +1,11 @@
 import styles from "./NavBar.module.css";
 
-import { INavBarItemsData } from "../../types";
+import { useState } from "react";
+import { INavBarItems } from "../../lib";
 import { navBarItemsData } from "../../data";
+
 import { Container, LinkItem } from "../Global";
 import HamburgerMenu from "./MenuButton/HamburgerMenu";
-import { useState } from "react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -30,7 +31,7 @@ const NavBar = () => {
             {isMenuOpen && <hr className="divider-sm" />}
 
             {/* Navigation items */}
-            {navBarItemsData.map((item: INavBarItemsData) => (
+            {navBarItemsData.map((item: INavBarItems) => (
               <li key={item.name}>
                 <LinkItem to={item.href}>{item.name}</LinkItem>
               </li>

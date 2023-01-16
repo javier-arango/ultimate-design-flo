@@ -1,12 +1,12 @@
-import { IContainer, FlexDirection, JustifyContent } from "../../../../types";
+import { IContainer, TFlexDirection, TJustifyContent } from "../../../../lib";
 
 interface Props extends IContainer {
   children: JSX.Element | JSX.Element[];
 }
 
 function containerStyled(
-  flexDirection: FlexDirection,
-  justifyContent: JustifyContent
+  flexDirection: TFlexDirection,
+  justifyContent: TJustifyContent
 ) {
   return {
     display: "flex",

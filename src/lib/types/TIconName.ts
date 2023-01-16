@@ -1,0 +1,17 @@
+export type TIconName =
+  | "email"
+  | "phone"
+  | "compare"
+  | "arrowCircleLeft"
+  | "arrowCircleRight"
+  | "office"
+  | "calendar"
+  | "fabric"
+  | "facebook"
+  | "instagram"
+  | "ribbonStarFilled"
+  | "location"
+  | "person"
+  | "flag"
+  | "ruler"
+  | "deliveryTruck";

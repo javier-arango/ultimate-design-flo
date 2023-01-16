@@ -1,7 +1,4 @@
-import NavBar from "../../components/NavBar/NavBar";
-import NavBarInfo from "../../components/NavBarInfo/NavBarInfo";
-import AboutPage from "../../components/AboutPage/AboutPage";
-import Footer from "../../components/Footer/Footer";
+import { NavBar, NavBarInfo, AboutPage, Footer } from "../../components";
 
 export default function About() {
   return (

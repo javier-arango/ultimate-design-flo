@@ -1,6 +1,6 @@
 import styles from "./LabelAndIcon.module.css";
+import { ILabelAndIcon } from "../../../lib";
 import Icon from "../Icon/Icon";
-import { ILabelAndIcon } from "../../../types";
 
 const LabelAndIcon = ({
   label,

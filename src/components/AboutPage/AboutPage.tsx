@@ -1,4 +1,4 @@
-import { IIconCard } from "../../types";
+import { IIconCard } from "../../lib";
 import CompanyQualities from "../CompanyQualities/CompanyQualities";
 import { Hero, InfoBlock } from "../Global";
 import Testimonials from "../Testimonials/Testimonials";
