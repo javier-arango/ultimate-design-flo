@@ -3,7 +3,7 @@ import styles from "./ContactPage.module.css";
 import { contactInfoData } from "../../data";
 
 import { Hero, IconCard, InfoBlock } from "../Global";
-import MessageForm from "../MessageForm/MessageForm";
+import ContactUsForm from "../ContactUsForm/ContactUsForm";
 
 const ContactPage = () => {
   return (
@@ -42,7 +42,7 @@ const ContactPage = () => {
         </div>
       </InfoBlock>
 
-      <MessageForm />
+      <ContactUsForm />
     </>
   );
 };
