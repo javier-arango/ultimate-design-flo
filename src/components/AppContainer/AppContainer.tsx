@@ -3,6 +3,7 @@ import { IMetaTags } from "../../lib";
 import { useRouter } from "next/router";
 
 const defaultMetaTags: IMetaTags = {
+  url: "https://ultimatedesignflo.com",
   title: "Ultimate Design Flo",
   description:
     "Get top-quality furniture upholstery services from the skilled team at Ultimate Design Flo. With a commitment to craftsmanship and attention to detail, we can give your furniture a new lease on life.",
@@ -54,6 +55,7 @@ const AppContainer = ({
   title,
   description,
   keywords,
+  url,
   children,
 }: IAppContainer) => {
   const router = useRouter();
@@ -86,10 +88,7 @@ const AppContainer = ({
           }
         />
         <meta name="robots" content="index, follow" />
-        <meta
-          property="og:url"
-          content={`https://ultimatedesignflo.com${router.asPath}`}
-        />
+        <meta property="og:url" content={defaultMetaTags.url + router.asPath} />
 
         {/* Open Graph Tag (OG) */}
         <meta
@@ -101,7 +100,7 @@ const AppContainer = ({
           }
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ultimatedesignflo.com/" />
+        <meta property="og:url" content={defaultMetaTags.url} />
         <meta
           property="og:description"
           content={!description ? defaultMetaTags.description : description}
@@ -122,13 +121,9 @@ const AppContainer = ({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <link
-          rel="canonical"
-          href={`https://ultimatedesignflo.com${router.asPath}`}
-        />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#51423B" />
+        <link rel="canonical" href={defaultMetaTags.url + router.asPath} />
       </Head>
-
       <main>{children}</main>
     </>
   );
