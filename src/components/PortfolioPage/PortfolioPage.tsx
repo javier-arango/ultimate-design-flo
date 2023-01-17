@@ -1,25 +1,14 @@
 import styles from "./PortfolioPage.module.css";
-import { IFileData } from "../../lib";
-import { useState, useEffect } from "react";
 
 import Image from "next/image";
-import { Container, EmptyDataMessage, Hero, Spinner } from "../Global";
+import { Container, EmptyDataMessage, Hero } from "../Global";
+
+const data: string[] = Array.from(
+  { length: 23 },
+  (_, i) => `/assets/product-images/${i + 1}.jpeg`
+);
 
 const PortfolioPage = () => {
-  const [data, setData] = useState<IFileData[]>([] as IFileData[]);
-  const [isLoading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch("/api/product-images")
-      .then((res) => res.json())
-      .then((data: IFileData[]) => {
-        setData(data);
-        setLoading(false);
-      });
-  }, []);
-
-  if (isLoading) return <Spinner />;
   if (data.length === 0) return <EmptyDataMessage />;
 
   return (
@@ -39,10 +28,10 @@ const PortfolioPage = () => {
       <Container justifyContent="center" flexDirection="column">
         <div className={`padding-responsive ${styles.gridContainer}`}>
           {data.map((file) => (
-            <div key={file.name} className={styles.imgContainer}>
+            <div key={file} className={styles.imgContainer}>
               <Image
-                src={file.path}
-                alt="Portfolio image 1"
+                src={file}
+                alt={`Portfolio image ${file}`}
                 fill
                 className={styles.imgStyle}
                 placeholder="blur"
