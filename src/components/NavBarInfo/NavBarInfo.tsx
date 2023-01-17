@@ -10,10 +10,16 @@ const NavBarInfo = () => {
       <Container justifyContent="center">
         <div className={styles.navBarInfoContent}>
           {/* Phone */}
-          <LabelAndIcon label={contactInfoData.phone} iconName={"phone"} />
+          <a href={`tel:+1${contactInfoData.phone}`}>
+            <LabelAndIcon label={contactInfoData.phone} iconName={"phone"} />
+          </a>
 
           {/* Email */}
-          <LabelAndIcon label={contactInfoData.email} iconName={"email"} />
+          <a
+            href={`mailto:${contactInfoData.email}?subject=Ultimate Design Flo`}
+          >
+            <LabelAndIcon label={contactInfoData.email} iconName={"email"} />
+          </a>
         </div>
       </Container>
     </div>
