@@ -25,10 +25,11 @@ const FormEmailField = ({ label, placeholder, className }: Props) => {
         required
         margin="dense"
         error={!!errors.email}
-        helperText={errors.email ? errors.email.message : ""}
+        helperText={(errors.email ? errors.email.message : "") as string}
         {...register("email", {
+          required: "Email is required",
           pattern: {
-            value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+            value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/,
             message: "Invalid email address",
           },
         })}
