@@ -1,0 +1,8 @@
+.inputField fieldset {
+  border-color: #51423b;
+  border-radius: 16px;
+}
+
+.inputField label {
+  color: #51423b;
+}

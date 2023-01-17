@@ -11,7 +11,7 @@ const PortfolioPage = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("/api/productImages")
+    fetch("/api/product-images")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
