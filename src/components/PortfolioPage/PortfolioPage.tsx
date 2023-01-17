@@ -20,7 +20,7 @@ const PortfolioPage = () => {
   }, []);
 
   if (isLoading) return <Spinner />;
-  if (!data) return <EmptyDataMessage />;
+  if (data.length === 0) return <EmptyDataMessage />;
 
   return (
     <>

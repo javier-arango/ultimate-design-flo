@@ -2,13 +2,16 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getFilesName } from "../../utils";
 
-const dir = "product-images";
-const filesData = getFilesName(dir);
-
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === "GET") {
-    res.status(200).json(filesData);
-  } else {
-    res.status(400).json({ message: "Bad request" });
+  try {
+    const filesData = getFilesName("product-images");
+
+    if (req.method === "GET") {
+      res.status(200).json(filesData);
+    } else {
+      res.status(400).json({ message: "Bad request" });
+    }
+  } catch (e) {
+    res.status(400).json({ error: true, message: "Images not found" });
   }
 }

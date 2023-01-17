@@ -34,7 +34,6 @@ const BgImageContainer = ({
         src={image}
         alt={alt}
         fill
-        priority
         quality={85}
         className={styles.imgContainer}
         placeholder="blur"
