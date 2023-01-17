@@ -14,4 +14,5 @@ export type TIconName =
   | "person"
   | "flag"
   | "ruler"
-  | "deliveryTruck";
+  | "deliveryTruck"
+  | "sofa";

@@ -16,6 +16,7 @@ import {
   RulerIcon,
   DeliveryTruckIcon,
   CompareIcon,
+  SofaIcon,
 } from "./Icons";
 
 interface Props extends IIcon {
@@ -49,6 +50,7 @@ const Icon = ({ name, width, height, color }: Props) => {
     deliveryTruck: (
       <DeliveryTruckIcon width={width} height={height} color={color} />
     ),
+    sofa: <SofaIcon width={width} height={height} color={color} />,
   };
 
   // Return the icon

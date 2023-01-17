@@ -1,13 +1,11 @@
-import { NavBar, NavBarInfo, ContactPage, Footer } from "../../components";
+import { AppContainer, ContactPage } from "../../components";
 
 export default function Contact() {
   return (
     <>
-      {/* Navigation Info */}
-      <NavBarInfo />
-      <NavBar />
-      <ContactPage />
-      <Footer />
+      <AppContainer title="Get in Touch">
+        <ContactPage />
+      </AppContainer>
     </>
   );
 }

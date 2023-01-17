@@ -6,6 +6,7 @@ import { navBarItemsData } from "../../data";
 
 import { Container, LinkItem } from "../Global";
 import HamburgerMenu from "./MenuButton/HamburgerMenu";
+import Logo from "./Logo/Logo";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -16,7 +17,7 @@ const NavBar = () => {
       <nav className={styles["navBar-container"]}>
         <Container flexDirection="row">
           {/* Logo */}
-          <LinkItem to="/">Ultimate Design Flo</LinkItem>
+          <Logo />
 
           {/* Menu Button for mobile */}
           <HamburgerMenu open={isMenuOpen} setOpen={setIsMenuOpen} />
