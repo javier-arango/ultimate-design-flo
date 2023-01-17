@@ -1,3 +1,5 @@
+export { default as AppContainer } from "./AppContainer/AppContainer";
+
 export { default as NavBar } from "./NavBar/NavBar";
 export { default as NavBarInfo } from "./NavBarInfo/NavBarInfo";
 export { default as Footer } from "./Footer/Footer";

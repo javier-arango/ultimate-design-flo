@@ -1,13 +1,11 @@
-import { NavBar, NavBarInfo, PortfolioPage, Footer } from "../../components";
+import { AppContainer, PortfolioPage } from "../../components";
 
 export default function Portfolio() {
   return (
     <>
-      {/* Navigation Info */}
-      <NavBarInfo />
-      <NavBar />
-      <PortfolioPage />
-      <Footer />
+      <AppContainer title="Showcasing Our Expertise">
+        <PortfolioPage />
+      </AppContainer>
     </>
   );
 }
