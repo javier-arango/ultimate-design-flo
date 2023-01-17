@@ -1,8 +1,8 @@
 .inputField fieldset {
-  border-color: #51423b;
-  border-radius: 16px;
+  border-color: var(--color-oxford-brown);
+  border-radius: var(--space-md);
 }
 
 .inputField label {
-  color: #51423b;
+  color: var(--color-oxford-brown);
 }

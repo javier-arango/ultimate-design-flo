@@ -13,7 +13,7 @@ const PortfolioPage = () => {
     setLoading(true);
     fetch("/api/product-images")
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: IFileData[]) => {
         setData(data);
         setLoading(false);
       });
