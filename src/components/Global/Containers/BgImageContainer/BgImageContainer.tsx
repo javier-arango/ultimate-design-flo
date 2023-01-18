@@ -34,7 +34,8 @@ const BgImageContainer = ({
         src={image}
         alt={alt}
         fill
-        quality={85}
+        priority
+        quality={60}
         className={styles.imgContainer}
         placeholder="blur"
         blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"

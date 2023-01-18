@@ -36,8 +36,8 @@ const PortfolioPage = () => {
                 className={styles.imgStyle}
                 placeholder="blur"
                 blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
-                sizes="(min-width: 66em) 33vw,
-            (min-width: 44em) 50vw, 100vw"
+                sizes="(max-width: 300px) 33vw,
+            (max-width: 450px) 50vw, 100vw"
               />
             </div>
           ))}
