@@ -24,7 +24,8 @@ const Footer = () => {
             © Ultimate Design Flo. All rights reserved.
           </p>
 
-          <div className={styles.footerSocials}>
+          {/* Change the class .footerBottomInformation to justify-content   */}
+          {/* <div className={styles.footerSocials}>
             <p className="label-responsive">Follow Us</p>
 
             <LinkItem to="https://www.facebook.com/" external>
@@ -34,7 +35,7 @@ const Footer = () => {
             <LinkItem to="https://www.instagram.com/" external>
               <Icon name="instagram" width={20} height={20} color={"#D4C4BC"} />
             </LinkItem>
-          </div>
+          </div> */}
         </div>
       </Container>
     </footer>

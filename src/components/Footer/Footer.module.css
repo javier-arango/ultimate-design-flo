@@ -20,7 +20,7 @@
 
 .footerBottomInformation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* change it to justify-content if the social media are present */
   width: 100%;
   align-items: center;
   align-content: center;

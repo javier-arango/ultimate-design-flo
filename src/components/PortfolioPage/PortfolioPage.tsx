@@ -31,7 +31,7 @@ const PortfolioPage = () => {
             <div key={file} className={styles.imgContainer}>
               <Image
                 src={file}
-                alt={`Portfolio image ${file}`}
+                alt={`Portfolio image ${file} | Ultimate Design Flow luxurious services`}
                 fill
                 className={styles.imgStyle}
                 placeholder="blur"
