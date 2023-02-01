@@ -1,2 +1,2 @@
-export { default as getFilesName } from "./getFilesName";
 export { default as generateEmailTemplate } from "./generateEmailTemplate";
+export { default as calculateYearsInBusiness } from "./calculateYearsInBusiness";

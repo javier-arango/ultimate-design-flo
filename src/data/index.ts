@@ -7,3 +7,5 @@ export { serviceAreaLocationData } from "./serviceAreaLocationData";
 export { featureProjectsData } from "./featureProjectsData";
 export { testimonialsData } from "./testimonialsData";
 export { defaultMetaTagsData } from "./defaultMetaTagsData";
+export { aboutTheCompanyData } from "./aboutTheCompanyData";
+export { imageData } from "./imageData";

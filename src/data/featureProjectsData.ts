@@ -2,41 +2,28 @@ import { IFeatureProjects } from "../lib";
 
 export const featureProjectsData: IFeatureProjects[] = [
   {
-    projectName: "Project 1",
+    projectName: "Sofa Project",
     image: {
       before: {
-        src: "/assets/product-images/1.jpeg",
-        alt: "Before image",
+        src: "/images/before-after-images/sofaAfter.jpeg",
+        alt: "Image of the sofa after it was styled by our stylists",
       },
       after: {
-        src: "/assets/product-images/2.jpeg",
-        alt: "After image",
+        src: "/images/before-after-images/sofaBefore.jpeg",
+        alt: "Image of the sofa before it was styled by our stylists",
       },
     },
   },
   {
-    projectName: "Project 2",
+    projectName: "Chair Project",
     image: {
       before: {
-        src: "/assets/product-images/3.jpeg",
-        alt: "Before image",
+        src: "/images/before-after-images/chairAfter.jpeg",
+        alt: "Image of the chair after it was styled by our stylists",
       },
       after: {
-        src: "/assets/product-images/4.jpeg",
-        alt: "After image",
-      },
-    },
-  },
-  {
-    projectName: "Project 3",
-    image: {
-      before: {
-        src: "/assets/product-images/5.jpeg",
-        alt: "Before image",
-      },
-      after: {
-        src: "/assets/product-images/6.jpeg",
-        alt: "After image",
+        src: "/images/before-after-images/chairBefore.jpeg",
+        alt: "Image of the chair before it was styled by our stylists",
       },
     },
   },

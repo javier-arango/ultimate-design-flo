@@ -131,9 +131,11 @@ a[href^="mailto:"] {
 }
 
 /* CSS Styles goes here */
+@import "./variables.css";
+
 html,
 body {
-  font-family: var(--font-primary), var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: 500;
   color: var(--color-oxford-brown);
   background: var(--color-lynx-white);

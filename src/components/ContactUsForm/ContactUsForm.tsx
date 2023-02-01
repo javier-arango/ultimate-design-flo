@@ -80,7 +80,7 @@ const ContactUsForm = () => {
 
                   {/* Submit Button */}
                   <Grid item xs={12}>
-                    <Button label="submit" type="submit" />
+                    <Button label="Submit" type="submit" />
                   </Grid>
                 </Grid>
               </form>

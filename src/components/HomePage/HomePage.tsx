@@ -1,19 +1,26 @@
 import { useRouter } from "next/router";
-import { featureProjectsData, servicesData } from "../../data";
+import {
+  aboutTheCompanyData,
+  featureProjectsData,
+  servicesData,
+} from "../../data";
 
 import { Hero, InfoBlock } from "../Global";
 import Services from "../Services/Services";
 import FeatureProjects from "../FeatureProjects/FeatureProjects";
+import { calculateYearsInBusiness } from "../../utils";
 
 const HomePage = () => {
-  let router = useRouter();
+  const router = useRouter();
+  const companyFounded = aboutTheCompanyData.yearFounded;
+  const yearsInBusiness = calculateYearsInBusiness(companyFounded);
 
   return (
     <>
       {/* Hero image with title */}
       <Hero
         image={{
-          src: "/assets/hero-images/home-page-img.webp",
+          src: "/images/hero-images/home-page-img.webp",
           alt: "Home page image for Ultimate Design Flow website",
         }}
         infoBlock={{
@@ -31,11 +38,11 @@ const HomePage = () => {
       {/* Little story about the business */}
       <InfoBlock
         headline="Our Story"
-        paragraph="Founded in 2014, Ultimate Design Flo has been dedicated to providing
+        paragraph={`Founded in ${companyFounded}, Ultimate Design Flo has been dedicated to providing
           expert furniture upholstery services to customers in the Florida area
-          for over 8 years. With a team of skilled upholsterers and a commitment
+          for over ${yearsInBusiness} years. With a team of skilled upholsterers and a commitment
           to quality craftsmanship, we have built a reputation for excellence
-          within the industry."
+          within the industry.`}
         button={{
           label: "Learn More",
           variant: "secondary",

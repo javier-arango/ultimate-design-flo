@@ -10,7 +10,7 @@ const ContactPage = () => {
     <>
       <Hero
         image={{
-          src: "/assets/hero-images/contact-page-img.webp",
+          src: "/images/hero-images/contact-page-img.webp",
           alt: "Contact page image for Ultimate Design Flow website",
         }}
         containerSize="sm"

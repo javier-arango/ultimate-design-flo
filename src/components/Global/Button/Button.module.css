@@ -8,6 +8,10 @@
 
   user-select: none;
   padding: var(--space-big) var(--space-xxx-big);
+
+  /* Ripple Effect */
+  background-position: center;
+  transition: background 0.5s;
 }
 
 /* Primary Button */
@@ -25,14 +29,27 @@
 
 /* Primary Button Hover */
 .primaryButton:hover {
-  background: var(--color-button-hover);
+  background: var(--color-button-hover)
+    radial-gradient(circle, transparent 1%, var(--color-button-hover) 1%)
+    center/15000%;
   /* color: var(--color-gold-taffeta); */
 }
 
 /* Secondary Button Hover */
 .secondaryButton:hover {
+  background: var(--color-button-hover)
+    radial-gradient(circle, transparent 1%, var(--color-button-hover) 1%)
+    center/15000%;
+
   border-color: var(--color-button-hover);
-  color: var(--color-button-hover);
+  color: var(--color-lynx-white);
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+  background-color: var(--color-gold-taffeta);
+  background-size: 100%;
+  transition: background 0s;
 }
 
 /* Medium Screen */

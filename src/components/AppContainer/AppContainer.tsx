@@ -2,6 +2,9 @@ import Head from "next/head";
 import { IMetaTags } from "../../lib";
 import { useRouter } from "next/router";
 import { defaultMetaTagsData } from "../../data";
+import NavBarInfo from "../NavBarInfo/NavBarInfo";
+import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 interface IAppContainer extends IMetaTags {
   children: JSX.Element | JSX.Element[];
@@ -82,7 +85,12 @@ const AppContainer = ({
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#51423B" />
         <link rel="canonical" href={defaultMetaTagsData.url + router.asPath} />
       </Head>
-      <main>{children}</main>
+      <main>
+        <NavBarInfo />
+        <NavBar />
+        {children}
+        <Footer />
+      </main>
     </>
   );
 };

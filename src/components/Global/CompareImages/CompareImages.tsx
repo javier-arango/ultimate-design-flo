@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ICompareImages } from "../../../lib";
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Icon from "../Icon/Icon";
+import { imageData } from "../../../data";
 
 const CompareImages = ({ before, after }: ICompareImages) => {
   const [isResizing, setIsResizing] = useState<boolean>(false);
@@ -90,7 +91,7 @@ const CompareImages = ({ before, after }: ICompareImages) => {
             alt={before.alt}
             fill
             placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+            blurDataURL={imageData.blurDataURL}
             sizes="(min-width: 66em) 33vw,
             (min-width: 44em) 50vw, 100vw"
           />
@@ -113,7 +114,7 @@ const CompareImages = ({ before, after }: ICompareImages) => {
             alt={after.alt}
             fill
             placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+            blurDataURL={imageData.blurDataURL}
             sizes="(min-width: 66em) 33vw,
             (min-width: 44em) 50vw, 100vw"
           />
