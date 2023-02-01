@@ -3,7 +3,7 @@ import { IImageCard } from "../lib";
 export const servicesData: IImageCard[] = [
   {
     image: {
-      src: "/assets/service-images/upholstery.webp",
+      src: "/images/service-images/upholstery.webp",
       alt: "Upolstery Service Image",
     },
     serviceName: "Upholstery",
@@ -12,7 +12,7 @@ export const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/custom-draperies.webp",
+      src: "/images/service-images/custom-draperies.webp",
       alt: "Custom Draperies Service Image",
     },
     serviceName: "Custom Draperies",
@@ -21,7 +21,7 @@ export const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/furniture-touch-ups.webp",
+      src: "/images/service-images/furniture-touch-ups.webp",
       alt: "Furniture Touch-Ups Service Image",
     },
     serviceName: "Furniture Touch-Ups",
@@ -30,7 +30,7 @@ export const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/general-repairs.webp",
+      src: "/images/service-images/general-repairs.webp",
       alt: "General Repairs Service Image",
     },
     serviceName: "General Repairs",
@@ -39,7 +39,7 @@ export const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/remodeling.webp",
+      src: "/images/service-images/remodeling.webp",
       alt: "Remodeling Service Image",
     },
     serviceName: "Remodeling",
@@ -48,7 +48,7 @@ export const servicesData: IImageCard[] = [
   },
   {
     image: {
-      src: "/assets/service-images/restoration.webp",
+      src: "/images/service-images/restoration.webp",
       alt: "Restoration Service Image",
     },
     serviceName: "Restoration",

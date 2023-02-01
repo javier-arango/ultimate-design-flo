@@ -2,10 +2,11 @@ import styles from "./PortfolioPage.module.css";
 
 import Image from "next/image";
 import { Container, EmptyDataMessage, Hero } from "../Global";
+import { imageData } from "../../data";
 
 const data: string[] = Array.from(
   { length: 23 },
-  (_, i) => `/assets/product-images/${i + 1}.jpeg`
+  (_, i) => `/images/product-images/${i + 1}.jpeg`
 );
 
 const PortfolioPage = () => {
@@ -15,7 +16,7 @@ const PortfolioPage = () => {
     <>
       <Hero
         image={{
-          src: "/assets/hero-images/portfolio-page-img.webp",
+          src: "/images/hero-images/portfolio-page-img.webp",
           alt: "Portfolio page image for Ultimate Design Flow website",
         }}
         containerSize="sm"
@@ -35,7 +36,7 @@ const PortfolioPage = () => {
                 fill
                 className={styles.imgStyle}
                 placeholder="blur"
-                blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+                blurDataURL={imageData.blurDataURL}
                 sizes="(max-width: 300px) 33vw,
             (max-width: 450px) 50vw, 100vw"
               />

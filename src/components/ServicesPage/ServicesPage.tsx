@@ -9,7 +9,7 @@ const ServicesPage = () => {
     <>
       <Hero
         image={{
-          src: "/assets/hero-images/service-page-img.webp",
+          src: "/images/hero-images/service-page-img.webp",
           alt: "Service page image for Ultimate Design Flow website",
         }}
         containerSize="sm"

@@ -20,3 +20,4 @@ export type { default as IServiceAreaLocation } from "./IServiceAreaLocation";
 export type { default as ITestimonial } from "./ITestimonial";
 export type { default as IContactInfo } from "./IContactInfo";
 export type { default as IMetaTags } from "./IMetaTags";
+export type { default as IAboutTheCompany } from "./IAboutTheCompany";

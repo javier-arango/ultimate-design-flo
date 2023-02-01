@@ -1,6 +1,7 @@
 import styles from "./ImageCard.module.css";
 import Image from "next/image";
 import { IImageCard } from "../../../lib";
+import { imageData } from "../../../data";
 
 const ImageCard = ({ image, serviceName, serviceDescription }: IImageCard) => {
   return (
@@ -12,7 +13,7 @@ const ImageCard = ({ image, serviceName, serviceDescription }: IImageCard) => {
           fill
           className={styles.img}
           placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+          blurDataURL={imageData.blurDataURL}
           sizes="(min-width: 66em) 33vw,
             (min-width: 44em) 50vw, 100vw"
         />

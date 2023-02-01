@@ -1,6 +1,7 @@
 import styles from "./BgImageContainer.module.css";
 import { IBgImageContainer, TContainerSize } from "../../../../lib";
 import Image from "next/image";
+import { imageData } from "../../../../data";
 
 interface Props extends IBgImageContainer {
   children?: JSX.Element | JSX.Element[];
@@ -38,7 +39,7 @@ const BgImageContainer = ({
         quality={60}
         className={styles.imgContainer}
         placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,LpLNiB%MkWof_NWCV@aeX9j[oJj@"
+        blurDataURL={imageData.blurDataURL}
       />
 
       {/* Blur background with a color of 50% opacity */}
