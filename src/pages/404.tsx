@@ -1,5 +1,5 @@
-import { AppContainer } from "../components";
-import { InfoBlock } from "../components/Global";
+import { AppContainer } from "components";
+import { InfoBlock } from "components/common";
 import { useRouter } from "next/router";
 
 const ContainerStyled = {

@@ -5,7 +5,7 @@ interface IHamburgerMenu {
   setOpen: (isOpen: boolean) => void;
 }
 
-const HamburgerMenu = ({ open, setOpen }: IHamburgerMenu) => {
+export const HamburgerMenu = ({ open, setOpen }: IHamburgerMenu) => {
   return (
     <button
       className={styles.toggleMenuBtn}
@@ -23,5 +23,3 @@ const HamburgerMenu = ({ open, setOpen }: IHamburgerMenu) => {
     </button>
   );
 };
-
-export default HamburgerMenu;

@@ -1,14 +1,15 @@
 import styles from "./NavBar.module.css";
 
 import { useState } from "react";
-import { INavBarItems } from "../../lib";
-import { navBarItemsData } from "../../data";
 
-import Logo from "./Logo/Logo";
-import { Container, LinkItem } from "../Global";
-import HamburgerMenu from "./MenuButton/HamburgerMenu";
+import { INavBarItems } from "lib";
+import { navBarItemsData } from "data";
 
-const NavBar = () => {
+import { Container, LinkItem } from "@components/common";
+import { Logo } from "./Logo/Logo";
+import { HamburgerMenu } from "./MenuButton/HamburgerMenu";
+
+export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
@@ -43,5 +44,3 @@ const NavBar = () => {
     </>
   );
 };
-
-export default NavBar;

@@ -1,4 +1,4 @@
-import { AppContainer, ServicesPage } from "../../components";
+import { AppContainer, ServicesPage } from "components";
 
 export default function Services() {
   return (

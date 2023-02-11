@@ -1,10 +1,11 @@
 import styles from "./Footer.module.css";
 
-import { Container, Icon, LinkItem } from "../Global";
-import { footerItemsData } from "../../data";
-import FooterItem from "./FooterItem/FooterItem";
+import { footerItemsData } from "data";
 
-const Footer = () => {
+import { Container } from "@components/common";
+import { FooterItem } from "./FooterItem/FooterItem";
+
+export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container>
@@ -41,5 +42,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
