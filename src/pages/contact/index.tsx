@@ -1,4 +1,4 @@
-import { AppContainer, ContactPage } from "../../components";
+import { AppContainer, ContactPage } from "components";
 
 export default function Contact() {
   return (

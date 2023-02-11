@@ -1,4 +1,4 @@
-import { Icon, LinkItem } from "../../Global";
+import { Icon, LinkItem } from "@components/common";
 
 const logoStyle = {
   display: "flex",
@@ -6,7 +6,7 @@ const logoStyle = {
   gap: "0.75rem", // 12px
 } as React.CSSProperties;
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <>
       <div style={logoStyle}>
@@ -16,5 +16,3 @@ const Logo = () => {
     </>
   );
 };
-
-export default Logo;

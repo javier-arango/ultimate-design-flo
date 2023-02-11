@@ -1,7 +1,7 @@
-import { IMetaTags } from "../lib";
+import { IMetaTags } from "lib";
 
 export const defaultMetaTagsData: IMetaTags = {
-  url: "https://ultimatedesignflo.com",
+  url: "https://www.ultimatedesignflo.com",
   title: "Ultimate Design Flo",
   description:
     "Get top-quality furniture upholstery services from the skilled team at Ultimate Design Flo. With a commitment to craftsmanship and attention to detail, we can give your furniture a new lease on life.",

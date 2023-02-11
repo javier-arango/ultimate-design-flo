@@ -1,4 +1,4 @@
-import { AppContainer, PortfolioPage } from "../../components";
+import { AppContainer, PortfolioPage } from "components";
 
 export default function Portfolio() {
   return (

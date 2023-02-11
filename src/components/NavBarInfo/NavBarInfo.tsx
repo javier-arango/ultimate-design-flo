@@ -1,10 +1,9 @@
 import styles from "./NavBarInfo.module.css";
-import { contactInfoData } from "../../data";
 
-import { Container } from "../Global";
-import LabelAndIcon from "../Global/LabelAndIcon/LabelAndIcon";
+import { contactInfoData } from "data";
+import { Container, LabelAndIcon } from "@components/common";
 
-const NavBarInfo = () => {
+export const NavBarInfo = () => {
   return (
     <div className={styles.navBarInfoContainer}>
       <Container justifyContent="center">
@@ -25,5 +24,3 @@ const NavBarInfo = () => {
     </div>
   );
 };
-
-export default NavBarInfo;

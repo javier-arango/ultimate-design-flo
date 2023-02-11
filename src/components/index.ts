@@ -1,11 +1,11 @@
-export { default as AppContainer } from "./AppContainer/AppContainer";
+export { AppContainer } from "./AppContainer/AppContainer";
 
-export { default as NavBar } from "./NavBar/NavBar";
-export { default as NavBarInfo } from "./NavBarInfo/NavBarInfo";
-export { default as Footer } from "./Footer/Footer";
+export { NavBar } from "./NavBar/NavBar";
+export { NavBarInfo } from "./NavBarInfo/NavBarInfo";
+export { Footer } from "./Footer/Footer";
 
-export { default as HomePage } from "./HomePage/HomePage";
-export { default as AboutPage } from "./AboutPage/AboutPage";
-export { default as ServicesPage } from "./ServicesPage/ServicesPage";
-export { default as PortfolioPage } from "./PortfolioPage/PortfolioPage";
-export { default as ContactPage } from "./ContactPage/ContactPage";
+export { HomePage } from "./HomePage/HomePage";
+export { AboutPage } from "./AboutPage/AboutPage";
+export { ServicesPage } from "./ServicesPage/ServicesPage";
+export { PortfolioPage } from "./PortfolioPage/PortfolioPage";
+export { ContactPage } from "./ContactPage/ContactPage";

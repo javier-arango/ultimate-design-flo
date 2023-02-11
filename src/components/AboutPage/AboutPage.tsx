@@ -1,9 +1,9 @@
-import { aboutTheCompanyData } from "../../data";
-import { IIconCard } from "../../lib";
-import { calculateYearsInBusiness } from "../../utils";
-import CompanyQualities from "../CompanyQualities/CompanyQualities";
-import { Hero, InfoBlock } from "../Global";
-import Testimonials from "../Testimonials/Testimonials";
+import { IIconCard } from "lib";
+import { aboutTheCompanyData } from "data";
+import { calculateYearsInBusiness } from "utils";
+
+import { Testimonials } from "./Testimonials/Testimonials";
+import { Hero, InfoBlock, CompanyQualities } from "@components/common";
 
 const qualities: IIconCard[] = [
   {
@@ -23,7 +23,7 @@ const qualities: IIconCard[] = [
   },
 ];
 
-const AboutPage = () => {
+export const AboutPage = () => {
   const companyFounded = aboutTheCompanyData.yearFounded;
   const yearsInBusiness = calculateYearsInBusiness(companyFounded);
 
@@ -65,5 +65,3 @@ const AboutPage = () => {
     </>
   );
 };
-
-export default AboutPage;

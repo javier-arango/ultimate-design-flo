@@ -1,11 +1,12 @@
 import styles from "./ContactPage.module.css";
 
-import { contactInfoData } from "../../data";
+import { contactInfoData } from "data";
 
-import { Hero, IconCard, InfoBlock } from "../Global";
-import ContactUsForm from "../ContactUsForm/ContactUsForm";
+import { Hero, IconCard, InfoBlock } from "@components/common";
 
-const ContactPage = () => {
+import { ContactUsForm } from "./ContactUsForm/ContactUsForm";
+
+export const ContactPage = () => {
   return (
     <>
       <Hero
@@ -46,5 +47,3 @@ const ContactPage = () => {
     </>
   );
 };
-
-export default ContactPage;
