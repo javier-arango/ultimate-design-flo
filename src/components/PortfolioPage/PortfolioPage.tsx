@@ -7,7 +7,7 @@ import { imageData } from "data";
 import { Container, EmptyDataMessage, Hero } from "@components/common";
 
 const data: string[] = Array.from(
-  { length: 23 },
+  { length: 28 },
   (_, i) => `/images/product-images/${i + 1}.jpeg`
 );
 

@@ -15,7 +15,7 @@ export const NavBar = () => {
   return (
     <>
       {/* Navigation Bar Content */}
-      <nav className={styles["navBar-container"]}>
+      <nav className={styles.navBarContainer}>
         <Container flexDirection="row">
           {/* Logo */}
           <Logo />
@@ -26,7 +26,7 @@ export const NavBar = () => {
           {/* Navigation container */}
           <ul
             className={`${
-              isMenuOpen ? styles["navBar-menu-mobile"] : styles["navBar-menu"]
+              isMenuOpen ? styles.navBarMenuMobile : styles.navBarMenu
             }`}
           >
             {/* Show divider on mobile */}
@@ -34,7 +34,7 @@ export const NavBar = () => {
 
             {/* Navigation items */}
             {navBarItemsData.map((item: INavBarItems) => (
-              <li key={item.name}>
+              <li key={item.name} className={styles.navBarItem}>
                 <LinkItem to={item.href}>{item.name}</LinkItem>
               </li>
             ))}

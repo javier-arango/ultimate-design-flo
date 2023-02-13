@@ -8,7 +8,7 @@ export const companyQualitiesData: IIconCard[] = [
     title: "Experience",
     description: `${calculateYearsInBusiness(
       aboutTheCompanyData.yearFounded
-    )}+ Years of Upholstery Expertise and Trusted Client Relationships`,
+    )} Years of Upholstery Expertise and Trusted Client Relationships`,
   },
   {
     iconName: "ribbonStarFilled",
