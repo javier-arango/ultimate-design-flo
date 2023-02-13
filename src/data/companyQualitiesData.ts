@@ -1,11 +1,14 @@
-import { IIconCard } from "../lib";
+import { IIconCard } from "lib";
+import { calculateYearsInBusiness } from "utils";
+import { aboutTheCompanyData } from "./aboutTheCompanyData";
 
 export const companyQualitiesData: IIconCard[] = [
   {
     iconName: "calendar",
     title: "Experience",
-    description:
-      "8+ Years of Upholstery Expertise and Trusted Client Relationships",
+    description: `${calculateYearsInBusiness(
+      aboutTheCompanyData.yearFounded
+    )} Years of Upholstery Expertise and Trusted Client Relationships`,
   },
   {
     iconName: "ribbonStarFilled",

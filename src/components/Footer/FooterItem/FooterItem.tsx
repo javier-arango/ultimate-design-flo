@@ -1,6 +1,8 @@
 import styles from "./FooterItem.module.css";
-import { TIconName } from "../../../lib";
-import { LabelAndIcon } from "../../Global";
+
+import { TIconName } from "lib";
+
+import { LabelAndIcon } from "@components/common";
 
 interface IFooterItem {
   label: string;
@@ -8,7 +10,7 @@ interface IFooterItem {
   info: string;
 }
 
-const FooterItem = ({ label, icon, info }: IFooterItem) => {
+export const FooterItem = ({ label, icon, info }: IFooterItem) => {
   return (
     <div className={styles.footerItemContainer}>
       <LabelAndIcon
@@ -25,5 +27,3 @@ const FooterItem = ({ label, icon, info }: IFooterItem) => {
     </div>
   );
 };
-
-export default FooterItem;

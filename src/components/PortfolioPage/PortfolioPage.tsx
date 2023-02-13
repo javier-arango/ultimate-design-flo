@@ -1,15 +1,17 @@
 import styles from "./PortfolioPage.module.css";
 
 import Image from "next/image";
-import { Container, EmptyDataMessage, Hero } from "../Global";
-import { imageData } from "../../data";
+
+import { imageData } from "data";
+
+import { Container, EmptyDataMessage, Hero } from "@components/common";
 
 const data: string[] = Array.from(
-  { length: 23 },
+  { length: 28 },
   (_, i) => `/images/product-images/${i + 1}.jpeg`
 );
 
-const PortfolioPage = () => {
+export const PortfolioPage = () => {
   if (data.length === 0) return <EmptyDataMessage />;
 
   return (
@@ -47,5 +49,3 @@ const PortfolioPage = () => {
     </>
   );
 };
-
-export default PortfolioPage;

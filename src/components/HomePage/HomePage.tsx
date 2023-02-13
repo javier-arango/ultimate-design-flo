@@ -1,16 +1,12 @@
 import { useRouter } from "next/router";
-import {
-  aboutTheCompanyData,
-  featureProjectsData,
-  servicesData,
-} from "../../data";
 
-import { Hero, InfoBlock } from "../Global";
-import Services from "../Services/Services";
-import FeatureProjects from "../FeatureProjects/FeatureProjects";
-import { calculateYearsInBusiness } from "../../utils";
+import { calculateYearsInBusiness } from "utils";
+import { aboutTheCompanyData, featureProjectsData, servicesData } from "data";
 
-const HomePage = () => {
+import { Hero, Services, InfoBlock } from "@components/common";
+import { FeatureProjects } from "./FeatureProjects/FeatureProjects";
+
+export const HomePage = () => {
   const router = useRouter();
   const companyFounded = aboutTheCompanyData.yearFounded;
   const yearsInBusiness = calculateYearsInBusiness(companyFounded);
@@ -66,5 +62,3 @@ const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;

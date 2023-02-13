@@ -1,10 +1,9 @@
-import { servicesData, companyQualitiesData } from "../../data";
-import Services from "../Services/Services";
-import CompanyQualities from "../CompanyQualities/CompanyQualities";
-import ServiceArea from "../ServiceArea/ServiceArea";
-import { Hero } from "../Global";
+import { servicesData, companyQualitiesData } from "data";
 
-const ServicesPage = () => {
+import { Hero, CompanyQualities, Services } from "@components/common";
+import { ServiceArea } from "./ServiceArea/ServiceArea";
+
+export const ServicesPage = () => {
   return (
     <>
       <Hero
@@ -39,5 +38,3 @@ const ServicesPage = () => {
     </>
   );
 };
-
-export default ServicesPage;

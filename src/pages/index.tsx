@@ -1,4 +1,4 @@
-import { AppContainer, HomePage } from "../components";
+import { AppContainer, HomePage } from "components";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { AboutPage, AppContainer } from "../../components";
+import { AboutPage, AppContainer } from "components";
 
 export default function About() {
   return (

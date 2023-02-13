@@ -1,16 +1,18 @@
 import Head from "next/head";
-import { IMetaTags } from "../../lib";
 import { useRouter } from "next/router";
-import { defaultMetaTagsData } from "../../data";
-import NavBarInfo from "../NavBarInfo/NavBarInfo";
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
+
+import { IMetaTags } from "lib";
+import { defaultMetaTagsData } from "data";
+
+import { Footer } from "@components/Footer/Footer";
+import { NavBar } from "@components/NavBar/NavBar";
+import { NavBarInfo } from "@components/NavBarInfo/NavBarInfo";
 
 interface IAppContainer extends IMetaTags {
   children: JSX.Element | JSX.Element[];
 }
 
-const AppContainer = ({
+export const AppContainer = ({
   title,
   description,
   keywords,
@@ -94,5 +96,3 @@ const AppContainer = ({
     </>
   );
 };
-
-export default AppContainer;

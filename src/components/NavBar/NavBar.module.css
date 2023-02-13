@@ -1,4 +1,4 @@
-.navBar-container {
+.navBarContainer {
   padding: var(--space-x-big) 0;
 
   color: var(--color-christobel);
@@ -7,7 +7,7 @@
 
 /* Medium Screen & Larger */
 @media only screen and (min-width: 768px) {
-  .navBar-menu {
+  .navBarMenu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -18,15 +18,20 @@
 
 /* Small Screen & Some of the Medium Screen */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .navBar-menu {
+  .navBarMenu {
     display: none;
   }
 
-  .navBar-menu-mobile {
+  .navBarMenuMobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-xx-big);
     width: 100%;
+  }
+
+  .navBarItem {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
