@@ -1,4 +1,4 @@
-import { IFormInputs } from "../lib";
+import { IFormInputs } from "lib";
 
 export default function generateEmailResponse({
   firstName,
